@@ -1,5 +1,6 @@
 import random
-from insertion.insertion import insertion_sort
+# from insertion.insertion import insertion_sort
+from merge.merge import merge_sort
 
 def create_random_int_array(length, min = 0, max = 100):
   test_case = []
@@ -21,14 +22,15 @@ def is_sorted_asc(arr):
       return False
   return True
 
-def test_sorting_method_inplace(algorithm):
+def test_sorting_method_inplace(algorithm, debug = True):
   fails = 0
   test_cases = create_test_cases(100)
   for case in test_cases:
-    print('Input:', case)
     output = case[:]
     algorithm(output)
-    print('Output:', output)
+    if debug:
+      print('Input:', case)
+      print('Output:', output)
     if not is_sorted_asc(output):
       fails += 1
     
@@ -38,4 +40,4 @@ def test_sorting_method_inplace(algorithm):
     print('SUCCESS!')
 
 if __name__ == '__main__':
-  test_sorting_method_inplace(insertion_sort)
+  test_sorting_method_inplace(merge_sort, False)
