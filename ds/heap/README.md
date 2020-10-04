@@ -82,7 +82,7 @@ BUILD-MAX-HEAP(A):
   A.heap-size = A.length
   for i = [A.length/2] downto 1
     MAX-HEAPIFY(A, i)
-```
+``` 
 
 Each call to MAX-HEAPIFY costs O(lg n) time, and BUILD-MAX-HEAP makes O(n) such calls, thus the running time is O(n lg n). This upper bound, though correct, is not asymptotically tight.
 
