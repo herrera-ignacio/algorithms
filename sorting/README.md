@@ -27,3 +27,7 @@ We can beat the lower bound of Gamma(n lg n) if we can gather information about 
 A related algorithm, __Radix Sort__, can be used to extend the range of Counting Sort. If there are `n` integers to sort, each integer has `d` _digits_, and each digit can take on up to `k` _possible values_, then Radix Sort can sort the numbers in __Theta(d(n+k))__. When `d` is a constant, and `k` is O(n), radix sort runs in linear time.
 
 A third algorithm, __Bucket Sort__, requires knowledge of the probabilistic distribution of numbers in the input array. It can sort `n` real numbers uniformly distributed in the half-open interval [0, 1) in average-case (n) time.
+
+## In-Place sorting
+
+A sorting algorithm sorts __in-place__ if only a constant number of elements of the input array are ever stored outside the array.
