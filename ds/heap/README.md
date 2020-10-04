@@ -87,3 +87,32 @@ BUILD-MAX-HEAP(A):
 Each call to MAX-HEAPIFY costs O(lg n) time, and BUILD-MAX-HEAP makes O(n) such calls, thus the running time is O(n lg n). This upper bound, though correct, is not asymptotically tight.
 
 We can prove the __running time of BUILD-MAX-HEAP is O(n)__.
+
+### Other Procedures
+
+```
+HEAP-MAXIMUM(A)
+  return A[1]
+
+HEAP-EXTRACT-MAX(A) // O(lg n)
+  if A.heap-size < 1
+    error "heap underflow"
+  max = A[1]
+  A[1] = A[A.heap-size]
+  A.heap-size = A.heap-size - 1
+  MAX-HEAPIFY(A, 1)
+  return max
+
+HEAP-INCREASE-KEY(A, i, key) // O(lg n)
+  if key < A[i]
+    error "new key is smaller than current key"
+  A[i] = key
+  while i > 1 and A[PARENT(i)] < A[i]
+    exchange A[i] with A[PARENT(i)]
+    i = PARENT(i)
+
+MAX-HEAP-INSERT(A, key) // (lg n)
+  A.heap-size = A.heap-size + 1
+  A[A.heap-size] = -infinity
+  HEAP-INCREASE-KEY(A, A.heap-size, key)
+```

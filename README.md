@@ -19,6 +19,7 @@
 ### Data Structures
 
 * [Heap](./ds/heap)
+* [Priority Queue](./ds/priority-queue)
 
 ### Terms
 
