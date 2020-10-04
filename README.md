@@ -6,8 +6,9 @@
 
 ## [Sorting](./sorting)
 
-* [Insertion Sort](./sorting/insertion)
-* [Merge Sort](./sorting/merge)
+* [Insertion Sort](./sorting/insertion_sort)
+* [Mergesort](./sorting/mergesort)
+* [Heapsort](./sorting/heapsort)
 * [Randomly](./sorting/randomly)
 
 ## Well-known problems
