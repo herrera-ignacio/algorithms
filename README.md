@@ -12,6 +12,7 @@
 * [Quicksort](./sorting/quicksort)
 * [Counting sort](./sorting/counting_sort)
 * [Radix sort](./sorting/radix_sort)
+* [Bucket sort](./sorting/bucket_sort)
 * [Randomly](./sorting/randomly)
 
 ## Well-known problems
