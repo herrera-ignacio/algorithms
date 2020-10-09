@@ -6,9 +6,11 @@
 
 ## [Sorting](./sorting)
 
-* [Insertion Sort](./sorting/insertion_sort)
+* [Insertion sort](./sorting/insertion_sort)
 * [Mergesort](./sorting/mergesort)
 * [Heapsort](./sorting/heapsort)
+* [Quicksort](./sorting/quicksort)
+* [Counting sort](./sorting/counting_sort)
 * [Randomly](./sorting/randomly)
 
 ## Well-known problems

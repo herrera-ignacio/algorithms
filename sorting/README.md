@@ -18,7 +18,9 @@ Sorting is considered to be the most fundamental problem in the study of algorit
 
 __Insertion, merge, heap and quicksort__, are all comparison sorts: they __determine the sorted order of an input array by comparing elements__.
 
-We prove a lower bound of __Gamma(n lg n)__ on the worst-case running time of any comparison sort on n inputs, thus showing that heapsort and mergesort are asymptotically optimal comparison sorts.
+### Worst-case time is Gamma(n lg n)
+
+By using a __decision-tree model__, we prove a lower bound of __Gamma(n lg n)__ on the worst-case running time of any comparison sort on n inputs, thus showing that heapsort and mergesort are asymptotically optimal comparison sorts.
 
 ## Other type of sorts
 
@@ -31,3 +33,8 @@ A third algorithm, __Bucket Sort__, requires knowledge of the probabilistic dist
 ## In-Place sorting
 
 A sorting algorithm sorts __in-place__ if only a constant number of elements of the input array are ever stored outside the array.
+
+
+## Sorting in linear time
+
+We need to make asumptions about the input instead of using only comparisons.
