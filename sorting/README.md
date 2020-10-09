@@ -35,6 +35,12 @@ A third algorithm, __Bucket Sort__, requires knowledge of the probabilistic dist
 A sorting algorithm sorts __in-place__ if only a constant number of elements of the input array are ever stored outside the array.
 
 
+## Stable sort
+
+Stable sorting algorithms __maintain the relative order of records with equal keys__.
+
+That is, a sorting algorithm is stable if whenever there are two records `R` and `S` with the same key and with `R` appearing before `S` in the original list, `R` will appear before `S` in the sorted list.
+
 ## Sorting in linear time
 
 We need to make asumptions about the input instead of using only comparisons.
