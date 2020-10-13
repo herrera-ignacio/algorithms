@@ -24,12 +24,12 @@
 
 * [Hiring Problem](./problems/hiring)
 
-## Glossary
-
-### Data Structures
+## [Data Structures](./ds)
 
 * [Heap](./ds/heap)
 * [Priority Queue](./ds/priority-queue)
+
+## Glossary
 
 ### Terms
 
