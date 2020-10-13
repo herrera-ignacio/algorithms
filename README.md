@@ -15,6 +15,11 @@
 * [Bucket sort](./sorting/bucket_sort)
 * [Randomly](./sorting/randomly)
 
+## [Medians and order statistics](./statistics)
+
+* [Minimum and maximum](./statistics/min-max)
+* [Randomized Selection](./statistics/randomized-selection)
+
 ## Well-known problems
 
 * [Hiring Problem](./problems/hiring)
