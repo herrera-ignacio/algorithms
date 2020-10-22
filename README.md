@@ -29,6 +29,8 @@
 * [Heap](./ds/heap)
 * [Stacks & Queues](./ds/stack-queue)
 * [Priority Queue](./ds/priority-queue)
+* [Linked List](./ds/linked-list)
+* [Rooted trees](./ds/rooted-tree)
 
 ## Glossary
 
