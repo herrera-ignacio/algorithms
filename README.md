@@ -31,6 +31,7 @@
 * [Priority Queue](./ds/priority-queue)
 * [Linked List](./ds/linked-list)
 * [Rooted trees](./ds/rooted-tree)
+* [Hash Table](./ds/hash-table)
 
 ## Glossary
 
