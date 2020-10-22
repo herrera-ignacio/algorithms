@@ -27,6 +27,7 @@
 ## [Data Structures](./ds)
 
 * [Heap](./ds/heap)
+* [Stacks & Queues](./ds/stack-queue)
 * [Priority Queue](./ds/priority-queue)
 
 ## Glossary
