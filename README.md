@@ -37,6 +37,6 @@
 
 ### Terms
 
-* [Divide and Conquer](./glossary/dq.md)
+* [Di vide and Conquer](./glossary/dq.md)
 * [Probablisitic Analysis](./glossary/probabilistic-analysis.md)
 * [Randomized Algorithm](./glossary/randomized-algo.md)
