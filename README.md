@@ -30,8 +30,9 @@
 * [Stacks & Queues](./ds/stack-queue)
 * [Priority Queue](./ds/priority-queue)
 * [Linked List](./ds/linked-list)
-* [Rooted trees](./ds/rooted-tree)
 * [Hash Table](./ds/hash-table)
+* [Rooted trees](./ds/rooted-tree)
+    * [Binary Search Tree](./ds/bst)
 
 ## Glossary
 
