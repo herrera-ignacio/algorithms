@@ -84,3 +84,78 @@ TREE-SUCCESSOR(x)
 ```
 
 We break the code into two cases. If the right subtree of node x is nonempty, then the successor of x is just the leftmost node in x's right subtree. On the other hand, if the right subtree of node `x` is empty and x has a successor `y`, then `y` is the lowest ancestor of `x` whose left child is also an ancestor of `x`.
+
+#### Important Child Property
+
+If a node in a BST has two children, then its successor has no left child and its predecessor has no right child.
+
+### Insertion | O(h)
+
+This procedure takes a node `z` for which `z.key = v` and `z.left = z.right = NIL`. It inserts `z` into an appropriate position in the tree.
+
+```
+TREE-INSERT(T, z)
+    y = NIL
+    x = T.root
+    while x != NIL
+        y = x
+        if z.key < x.key
+            x = x.left
+        else x = x.right
+    z.p = y
+    if y == NIL         // tree T was empty
+        T.root = z
+    else if z.key < y.key
+        y.left = z
+    else y.right = z 
+```
+
+### Deletion
+
+The strategy for deleting a node `z` from a BST `T` has four basic cases:
+
+* CASE 1: If `z` has no children, then we simply remove it by modifying its parent to replace `z` with `NIL`.
+
+* CASE 2: If `z` has just one child, then we elevate that child to take `z`'s position in the tree by modifying `z`'s parent.
+
+* CASE 3/4: If `z` has two children, the we find `z`'s successor `y`, which must be in `z`'s right subtree, and have `y` take `z`'s position in the tree. The rest of `z`'s original right subtree becomes `y`'s new right subtree, and `z`'s left subtree becomes `y`'s new left subtree. This case is the tricky one, because, it matters whether y is `z`'s right child.
+
+
+The procedure for deleting a given node `z` from a BST `T` takes as arguments pointers to `T` and `z`. It organizes its cases a bit differently from the three cases outlined previously by considering the four cases.
+
+1. If `z` has no left child, then we replace `z` by its right child (CASE 2), which may or may not be `NIL` (CASE 1).
+2. If `z` has just one child, which is its left child (CASE 2), then we replace `z` by its left child.
+3. Otherwise, `z` has both a left and a right child (CASE 3/4). We find `z`'s successor `y`, which lies in `z`'s right subtree and has no left child (see Successor & Predecessor). We want to splice `y` out of its current location and have it replace `z` in the tree.
+   1. If `y` is `z`'s right child, then we replace `z` by `y`, leaving `y`'s right child alone.
+   2. Otherwise, `y` lies within `z`'s right subtree but is not `z`'s right child. In this case, we first replace `y` by its own right child, and then we replace `z` by `y`.
+
+We define a subroutine `TRANSPLANT`, which replaces one subtree as a child of its parent with another subtree.
+
+```
+TRANSPLANT(T, u, v)
+    if u.p == NIL       // tree was empty or only 'u' had root
+        T.root = v
+    else if u == u.p.left       // put subtree in 'u' parent's left child
+        u.p.left = v
+    else u.p.right = v          // put subtree in `u` parent's right child
+    if v != NIL                 // finally, replace `v`'s parent
+        v.p = u.p
+```
+
+Now, to delete a node `z` from BST `T`:
+
+```
+TREE-DELETE(T, z)
+    if z.left == NIL
+        TRANSPLANT(T. z, z.right)       // CASE 1 or 2
+    else if z.right == NIL
+        TRANSPLANT(T, z, z.left)        // CASE 2
+    else y = TREE-MINIMUM(z.right)      // we find z's successor
+        if y.p != z                     // CASE 4, z's sucessor (y) is not z's right child
+            TRANSPLANT(T, y, y.right)   // we replace y, with y's right child
+            y.right = z.right           // we replace z with y (we start by replacing y's right subtree with z's right subtree)
+            y.right.p = y
+        TRANSPLANT(T, z, y)             // then we replace z with y, meaning we still have z's right child, and now we are also bringing y's left subtree if any
+        y.left = z.left
+        y.left.p = y
+```
