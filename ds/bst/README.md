@@ -159,3 +159,11 @@ TREE-DELETE(T, z)
         y.left = z.left
         y.left.p = y
 ```
+
+## Randomly built BST
+
+So far, little is known about the average height of a BST when both insertion and deletion are used to create it.
+
+We can define a randomly built BST on |n| keys as one that arises from inserting the keys in random order into an initially empty tree, where each of the n! permutations of the input keys is equally likely.
+
+The __expected height__ of a randomly built BST on `n` distinct keys is `O(lg n)`.
