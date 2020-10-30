@@ -55,24 +55,6 @@ Is simmetric to left rotation.
 
 We can insert a node into a `n`-node RBT in `O(lg n)` time. To guarantee that the RBT properties are preserved, we then call an auxiliary procedure `RB-INSERT-FIXUP` to recolor nodes and perform rotations.
 
-We shall break `RB-INSERT-FIXUP` in three major steps. First, we shall determine what violations of RB properties are introduced in `RB-INSERT` when node `z` is inserted and colored red. Second, we shall examine the overall goal of the `while`. Finally, we shall explore each of the three cases within the `while` loop's body.
-
-There are only two properties that might be violated, _1_ (root is black) and _4_ (red node cannot have a red child).
-
-#### Case 1: `z`'s uncle `y` is red.
-
-Because `z.p.p` is black, we can color both `z.p` and `y` black, and we can color `z.p.p` red.
-
-#### Case 2: `z`'s uncle `y` is black and `z` is a right child
-
-We immediately use a left rotation to transform the situation into case 3, in which node z is a left child.
-
-#### Case 3: `z`'s uncle `y` is black and `z` is a left child
-
-The node `z.p.p` exists, we execute some color changes and a right rotation.
-
-#### Algorithms
-
 ```
 RB-INSERT(T, z)
     y = T.nil
@@ -111,4 +93,105 @@ RB-INSERT-FIXUP(T, z)
         else T.root.color = BLACK                  
 ```
 
+We shall break `RB-INSERT-FIXUP` in three major steps. First, we shall determine what violations of RB properties are introduced in `RB-INSERT` when node `z` is inserted and colored red. Second, we shall examine the overall goal of the `while`. Finally, we shall explore each of the three cases within the `while` loop's body.
 
+There are only two properties that might be violated, _1_ (root is black) and _4_ (red node cannot have a red child).
+
+#### Case 1: `z`'s uncle `y` is red.
+
+Because `z.p.p` is black, we can color both `z.p` and `y` black, and we can color `z.p.p` red.
+
+#### Case 2: `z`'s uncle `y` is black and `z` is a right child
+
+We immediately use a left rotation to transform the situation into case 3, in which node z is a left child.
+
+#### Case 3: `z`'s uncle `y` is black and `z` is a left child
+
+The node `z.p.p` exists, we execute some color changes and a right rotation.
+
+### Deletion
+
+RBT deletion of a node takes time `O(lg n)`. It is a bit more complicated than inserting a node.
+
+First we need to customize the `TRANSPLANT` subroutine so that it applies to a RBT:
+
+```
+RB-TRANSPLANT(T, u, x)
+    if u.p == T.nil
+        T.root = v
+    else if u == u.p.left
+        u.p.left = v
+    else u.p.right = v
+    v.p = u.p
+```
+
+After deleting a node `z`, `RB-DELETE` calls an auxiliary procedure `RB-DELETE-FIXUP`, which changes colors and performs rotations to restore the RBP.
+
+```
+RB-DELETE(T, z)
+    y = z
+    y.original-color = y.color
+    if z.left == T.nil
+        x = z.right
+        RB-TRANSPLANT(T, z, z.right)
+    else if z.right == T.nil
+        x = z.left
+        RB-TRANSPLANT(T, z, z.left)
+    else y = TREE-MINIMUM(z.right)
+        y.original-color = y.color
+        x = y.right
+        if y.p == z
+            x.p = y
+        else
+            RB-TRANSPLANT(T, y, y.right)
+            y.right = z.right
+            y.right.p = y
+        RB-TRANSPLANT(T, z, y)
+        y.left = z.left
+        y.left.p = y
+        y.color = z.color
+    if y.original-color == BLACK
+        RB-DELETE-FIXUP(T, x)
+
+RB-DELETE-FIXUP(T, x)
+    while x != T.root and x.color == BLACK
+        if x = x.p.left
+            w = x.p.right
+            if w.color == RED                                           // CASE 1
+                w.color = BLACK
+                x.p.color = RED
+                LEFT-ROTATE(T, x, p)
+                w = x.p.right
+            if w.left.color == BLACK and w.right.color == BLACK         // CASE 2
+                w.color = RED
+                x = x.p
+            else
+                if w.right.color == BLACK                              // CASE 3
+                    w.left.color = BLACK
+                    w.color = RED
+                    RIGHT-ROTATE(T, w)
+                    w = x.p.right
+                w.color = x.p.color                                    // CASE 4
+                x.p.color = BLACK
+                w.right.color = BLACK
+                LEFT-ROTATE(T, x.p)
+                x = T.root
+        else
+            x.color = BLACK
+```
+
+#### Case 1: `x`'s sibiling `w` is red
+
+Since w must have black children, we can switch the colors of `w` and `x.p` and then perform a left rotation on `x.p` without violating any of the RBT properties. The new sibiling of `x`, which is one of `w`'s children prior to the rotation, is now black, and thus we have coverted case 1, into case 2, 3, or 4.
+
+#### Case 2: `x`'s sibiling `w` is black, and both of `w`'s children are black
+
+Since w is also black, we take one black off both `x` and `w`, leaving `x` owith only one black and leaving `w` red. To compensate for removing one black from `x` and `w`, we would like to add an extra black to `x.p`, which was originally either red or black.
+
+#### Case 3: `x`'s sibiling `w` is black, `w`'s left child is red, and rigt child is black
+
+We can switch the colors of w and its left child, and then perform a right rotation on `w`, transforming case 3 into case 4.
+
+#### Case 4: `x`'s sibling `w` is black, and `w`'s right child is red.
+
+By making some color changes and performing a left rotation on `x.p`, we can remove the extra black on `x`, making it singly black.
