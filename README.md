@@ -33,6 +33,7 @@
 * [Hash Table](./ds/hash-table)
 * [Rooted trees](./ds/rooted-tree)
     * [Binary Search Tree](./ds/bst)
+    * [Red-Black Tree](./ds/red-black-tree)
 
 ## Glossary
 
