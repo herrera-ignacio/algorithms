@@ -34,11 +34,12 @@
 * [Rooted trees](./ds/rooted-tree)
     * [Binary Search Tree](./ds/bst)
     * [Red-Black Tree](./ds/red-black-tree)
+    * [Order-Statistic Tree](./ds/order-statistic-tree)
 
 ## Glossary
 
 ### Terms
 
-* [Di vide and Conquer](./glossary/dq.md)
+* [Divide and Conquer](./glossary/dq.md)
 * [Probablisitic Analysis](./glossary/probabilistic-analysis.md)
 * [Randomized Algorithm](./glossary/randomized-algo.md)
