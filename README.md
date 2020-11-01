@@ -35,6 +35,7 @@
     * [Binary Search Tree](./ds/bst)
     * [Red-Black Tree](./ds/red-black-tree)
     * [Order-Statistic Tree](./ds/order-statistic-tree)
+    * [Interval Tree](./ds/interval-tree)
 
 ## Glossary
 
