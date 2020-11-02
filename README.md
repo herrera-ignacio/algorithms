@@ -42,6 +42,5 @@
 ### Terms
 
 * [Divide and Conquer](./glossary/dq.md)
-* [Dynamic Programming](./glossary/dynamic-programming.md)
 * [Probablisitic Analysis](./glossary/probabilistic-analysis.md)
 * [Randomized Algorithm](./glossary/randomized-algo.md)
