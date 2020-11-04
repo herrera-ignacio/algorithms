@@ -24,6 +24,7 @@
 
 * [Hiring Problem](./problems/hiring)
 * [Rod Cutting](./problems/rod-cutting)
+* [Matrix Chain Multiplication](./problems/matrix-chain-mult)
 
 ## [Data Structures](./ds)
 
