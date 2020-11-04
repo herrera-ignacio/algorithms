@@ -23,6 +23,7 @@
 ## Well-known problems
 
 * [Hiring Problem](./problems/hiring)
+* [Rod Cutting](./problems/rod-cutting)
 
 ## [Data Structures](./ds)
 
