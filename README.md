@@ -25,6 +25,7 @@
 * [Hiring Problem](./problems/hiring)
 * [Rod Cutting](./problems/rod-cutting)
 * [Matrix Chain Multiplication](./problems/matrix-chain-mult)
+* [Longest common subsequence](./problems/lcs)
 
 ## [Data Structures](./ds)
 
