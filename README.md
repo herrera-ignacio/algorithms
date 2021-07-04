@@ -22,6 +22,7 @@
 
 ## Well-known problems
 
+* [Activity Selection](./problems/activity-selection)
 * [Hiring Problem](./problems/hiring)
 * [Rod Cutting](./problems/rod-cutting)
 * [Matrix Chain Multiplication](./problems/matrix-chain-mult)
@@ -51,5 +52,6 @@
 
 * [Divide and Conquer](./glossary/dq.md)
 * [Dynamic Programming](./glossary/dynamic-programming.md)
+* [Greedy Algorithm](./glossary/greedy-algorithms.md)
 * [Probablisitic Analysis](./glossary/probabilistic-analysis.md)
 * [Randomized Algorithm](./glossary/randomized-algo.md)
