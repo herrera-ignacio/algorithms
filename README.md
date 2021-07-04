@@ -1,4 +1,4 @@
-# Algorithms
+# Algorithms & Data Structures
 
 ## Cryptography
 
@@ -29,7 +29,6 @@
 
 ## [Data Structures](./ds)
 
-* [Heap](./ds/heap)
 * [Stacks & Queues](./ds/stack-queue)
 * [Priority Queue](./ds/priority-queue)
 * [Linked List](./ds/linked-list)
@@ -39,6 +38,12 @@
     * [Red-Black Tree](./ds/red-black-tree)
     * [Order-Statistic Tree](./ds/order-statistic-tree)
     * [Interval Tree](./ds/interval-tree)
+
+### Trees
+
+#### Heap
+
+* [Binary Heap (Min/Max Heap)](./ds/trees/heap/binary-heap)
 
 ## Glossary
 

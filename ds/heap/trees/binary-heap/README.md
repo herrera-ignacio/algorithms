@@ -1,29 +1,66 @@
-# Heap
+# Binary Heap
 
-## Binary Heap
+* Overview
+* Applications
+* Height
+* Types & Heap Property
+  * Max Heap
+  * Min Heap
+* Procedures
+  * (Array Implementation) Get Relative Index
+  * (Array Implementation) Traveral
+  * Maintaining the Heap Property
+  * Building a Heap
+  * Others
 
-The (binary) heap data structure is an array oject that we can view as a nearly complete binary tree.
+> See the [examples folder](./examples) for implementation examples.
 
-* Each node of the tree corresponds to an element of the array.
-* The tree is completely filled on all levels except possibly the loewst, which is filled from the left up to a point.
+## Overview
+
+The *Binary Heap* is a *Binary Tree* with the following properties:
+
+* It is a *Complete Tree*. This property makes Heap suitable to be stored in an array.
+
+> In a *Complete Tree*, all levels are completely filled except possibly for the last level and the last level has all keys as left as possible.
+
+* It is either *Min Heap* or *Max Heap*, the same property must be recursively true for all nodes in the tree.
+
+> In a Min Binary Heap, the key at root must be minimumn among all keys present in the Binary Heap. Max Binary Heap is the opposite.
 
 ```
-PARENT(i): return Floor(i/2)
-LEFT(i): return 2i
-RIGHT(i): return 2i + 1
+            10                      10
+         /      \               /       \  
+       20        100          15         30  
+      /                      /  \        /  \
+    30                     40    50    100   40
 ```
 
-### Height
+## Applications
+
+* **Heap Sort** uses *Binary Heap* to sort an array in `O(n log n) time`.
+
+* **Priority Queues** can be efficiently implemented using *Binary Heap* because it supports `insert`, `delete`, `extractMax`, `decreaseKey` operations in `O(log n)` time.
+
+* **Graph Algorithms** use *priority queues* in algorithms like **Dijkstra's Shortest Path** and **Prim's Minimum Spanning Tree**.
+
+* Many problems can be efficiently solved using *Heaps*.
+  * **K'th Largest Element in an Array**
+  * **Sort an almost sorted array**
+  * **Merge K Sorted Arrays**
+
+## Height
 
 Viewing a heap as a tree, we define the __height__ of a node in a heap to be the number of edges on the longest simple downward path from the node to a leaf, and we define the height of the heap to be the height of its root.
 
 Since a heap of n elements is based on a complete binary tree, its height is __Theta(n)__.
 
-### Types & Heap Property
+## Types & Heap Property
 
 There are two kinds of binary heaps, max-heaps & min-heaps. In both kinds, the values in the nodes satisfy a __heap proprety__.
 
-#### Max Heap
+### Max Heap
+
+![](2021-07-04-14-44-59.png)
 
 In a __max-heap property__ is that for every node `i` other than the root:
 
@@ -33,7 +70,9 @@ A[PARENT(i)] >= A[i]
 
 That is, the value of a node is at most the value of its parent. Thus, the largest element in a max-heap is stored at the root4, and the subtree rooted at a node contains values no larger than that contained as the node itself.
 
-#### Min Heap
+### Min Heap
+
+![](2021-07-04-14-44-48.png)
 
 A min-heap is organized in the opposite way, the __min-heap property__ is that for every node i other than the root:
 
@@ -43,13 +82,25 @@ A[PARENT(i)] <= A[i]
 
 The smallest element in a min-heap is at the root.
 
-### Procedures
+## Procedures
 
 * _MAX-HEAPIFY_ procedure, which runs in O(lg n) time, is the key to maintaining the max-heap property.
 
 * _BUILD-MAX-HEAP_ procedure, which runs in O(n) time, procedues a max-heap from an unordered input array.
 
 * _MAX-HEAP-INSERT_, _HEAP-EXTRACT-MAX_, _HEAP-INCREASE-KEY_, _HEAP-MAXIMUM_ procedures, which run in O(lg n) time, allow the heap data structore to imlement a __priority queue__.
+
+### (Array Implementation) Get Relative Index
+
+```
+PARENT(i): return Floor(i/2)
+LEFT(i): return 2i
+RIGHT(i): return 2i + 1
+```
+
+### (Array Implementation) Traversal
+
+![](2021-07-04-14-43-55.png)
 
 ### Maintaining the heap property
 
