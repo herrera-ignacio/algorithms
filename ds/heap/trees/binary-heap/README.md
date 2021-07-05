@@ -13,7 +13,7 @@
   * Building a Heap
   * Others
 
-> See the [examples folder](./examples) for implementation examples.
+> * [Java examples](https://github.com/herrera-ignacio/datastructures-in-java/tree/master/src/main/java/trees/heaps)  
 
 ## Overview
 
