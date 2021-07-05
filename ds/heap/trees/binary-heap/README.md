@@ -7,8 +7,8 @@
   * Max Heap
   * Min Heap
 * Procedures
-  * (Array Implementation) Get Relative Index
-  * (Array Implementation) Traveral
+  * Get Relative Index
+  * Traveral
   * Maintaining the Heap Property
   * Building a Heap
   * Others
@@ -90,7 +90,7 @@ The smallest element in a min-heap is at the root.
 
 * _MAX-HEAP-INSERT_, _HEAP-EXTRACT-MAX_, _HEAP-INCREASE-KEY_, _HEAP-MAXIMUM_ procedures, which run in O(lg n) time, allow the heap data structore to imlement a __priority queue__.
 
-### (Array Implementation) Get Relative Index
+### Get Relative Index
 
 ```
 PARENT(i): return Floor(i/2)
@@ -98,7 +98,7 @@ LEFT(i): return 2i
 RIGHT(i): return 2i + 1
 ```
 
-### (Array Implementation) Traversal
+### Traversal
 
 ![](2021-07-04-14-43-55.png)
 

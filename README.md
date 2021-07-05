@@ -30,7 +30,7 @@
 
 ## [Data Structures](./ds)
 
-* [Stacks & Queues](./ds/stack-queue)
+* [Queues](./ds/stack-queue)
 * [Priority Queue](./ds/priority-queue)
 * [Linked List](./ds/linked-list)
 * [Hash Table](./ds/hash-table)
@@ -39,6 +39,10 @@
     * [Red-Black Tree](./ds/red-black-tree)
     * [Order-Statistic Tree](./ds/order-statistic-tree)
     * [Interval Tree](./ds/interval-tree)
+
+### Linear
+
+* [Stack](./ds/linear/stack)
 
 ### Trees
 
