@@ -43,6 +43,7 @@
 ### Linear
 
 * [Stack](./ds/linear/stack)
+* [Queue](./ds/linear/queue)
 
 ### Trees
 
