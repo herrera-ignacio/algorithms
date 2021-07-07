@@ -44,6 +44,7 @@
 
 * [Stack](./ds/linear/stack)
 * [Queue](./ds/linear/queue)
+    * [Priority Queue](./ds/linear/queue/priority-queue)
 
 ### Trees
 
