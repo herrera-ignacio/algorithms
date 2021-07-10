@@ -30,7 +30,6 @@
 
 ## [Data Structures](./ds)
 
-* [Linked List](ds/linked-list)
 * [Hash Table](ds/hash-table)
 * [Rooted trees](ds/rooted-tree)
     * [Binary Search Tree](ds/bst)
@@ -40,6 +39,9 @@
 
 ### Linear
 
+* [Linked List](ds/linear/linked-list)
+    * [Doubly Linked List](ds/linear/linked-list/doubly)
+    * [Circular Linked List](ds/linear/linked-list/circular)
 * [Stack](ds/linear/stack)
 * [Queue](ds/linear/queue)
     * [Priority Queue](ds/linear/queue/priority-queue)
