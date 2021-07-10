@@ -112,7 +112,7 @@ MAX-HEAPIFY(A, i):
   r = RIGHT(i)
   if l <= A.heap-size and A[l] > A[i]
     largest = l
-  else larget = i
+  else largest = i
   if r <= A.heap-size and A[r] > A[largest]
     largest = r
   if largest != i
