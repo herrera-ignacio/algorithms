@@ -64,4 +64,4 @@ Some important points:
 * If multiple elements are tied for least value, ties are broken arbitrarily.
 * Is not thread-safe (Java provides `PriorityBlockingQueue` class that implements the `BlockingQueue` interface).
 
-See more examples in my [Datastructures in Java repositroy]((https://github.com/herrera-ignacio/datastructures-in-java/tree/master/src/main/java/linear/queue)
+See more examples in my [Datastructures in Java repository]((https://github.com/herrera-ignacio/datastructures-in-java/tree/master/src/main/java/linear/queue)
