@@ -1,41 +1,19 @@
 # Algorithms & Data Structures
 
-## Cryptography
+* Data Structures
+    * Linear
+    * Trees
+    * Misc
+* Algorithms
+    * Cryptography
+    * Sorting
+    * Medians and Order Statistics
+* Glossary
+* Well-known Problems
 
-* [Caesar Cipher](crypto/caesar)
-
-## [Sorting](sorting)
-
-* [Insertion sort](sorting/insertion_sort)
-* [Mergesort](sorting/mergesort)
-* [Heapsort](sorting/heapsort)
-* [Quicksort](sorting/quicksort)
-* [Counting sort](sorting/counting_sort)
-* [Radix sort](sorting/radix_sort)
-* [Bucket sort](sorting/bucket_sort)
-* [Randomly](sorting/randomly)
-
-## [Medians and order statistics](statistics)
-
-* [Minimum and maximum](statistics/min-max)
-* [Randomized Selection](statistics/randomized-selection)
-
-## Well-known problems
-
-* [Activity Selection](problems/activity-selection)
-* [Hiring Problem](problems/hiring)
-* [Rod Cutting](problems/rod-cutting)
-* [Matrix Chain Multiplication](problems/matrix-chain-mult)
-* [Longest common subsequence](problems/lcs)
+---
 
 ## [Data Structures](ds)
-
-* [Hash Table](ds/hash-table)
-* [Rooted trees](ds/rooted-tree)
-    * [Binary Search Tree](ds/bst)
-    * [Red-Black Tree](ds/red-black-tree)
-    * [Order-Statistic Tree](ds/order-statistic-tree)
-    * [Interval Tree](ds/interval-tree)
 
 ### Linear
 
@@ -49,19 +27,64 @@
 
 ### Trees
 
+* [Rooted Trees](ds/trees)
 * [Binary Tree](ds/trees/binary-tree)
 * [M-ary / K-ary Trees](ds/trees/m-ary)
+* [Binary Search Tree](ds/trees/bst)
+* [Red-Black Tree](ds/trees/red-black-tree)
+* [Order-Statistic Tree](ds/trees/order-statistic-tree)
+* [Interval Tree](ds/trees/interval-tree)
 
 #### Heap
 
 * [Binary Heap (Min/Max Heap)](ds/trees/heap/binary-heap)
 
+### Misc
+
+#### Hashing
+
+* [Hash Table](ds/hashing/hash-table)
+
+## Algorithms
+
+### Cryptography
+
+* [Caesar Cipher](crypto/caesar)
+
+### [Sorting](sorting)
+
+* [Insertion sort](sorting/insertion_sort)
+* [Mergesort](sorting/mergesort)
+* [Heapsort](sorting/heapsort)
+* [Quicksort](sorting/quicksort)
+* [Counting sort](sorting/counting_sort)
+* [Radix sort](sorting/radix_sort)
+* [Bucket sort](sorting/bucket_sort)
+* [Randomly](sorting/randomly)
+
+### [Medians and Order Statistics](statistics)
+
+* [Minimum and maximum](statistics/min-max)
+* [Randomized Selection](statistics/randomized-selection)
+
 ## Glossary
 
-### Terms
+* [Set](ds/set)
+
+### Algorithm Design
 
 * [Divide and Conquer](glossary/dq.md)
 * [Dynamic Programming](glossary/dynamic-programming.md)
-* [Greedy Algorithm](glossary/greedy-algorithms.md)
+* [Greedy Algorithms](glossary/greedy-algorithms)
 * [Probablisitic Analysis](glossary/probabilistic-analysis.md)
 * [Randomized Algorithm](glossary/randomized-algo.md)
+
+## Well-known Problems
+
+* [Activity Selection](problems/activity-selection)
+* [Hiring Problem](problems/hiring)
+* [Rod Cutting](problems/rod-cutting)
+* [Matrix Chain Multiplication](problems/matrix-chain-mult)
+* [Longest common subsequence](problems/lcs)
+* [0-1 knapsack problem](problems/0-1-knapsack)
+* [Huffman Codes](problems/huffman-codes)

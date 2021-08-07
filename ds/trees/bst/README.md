@@ -1,5 +1,7 @@
 # Binary Search Tree
 
+![](2021-08-07-00-46-09.png)
+
 A BST is organized in a __binary tree__. We can represent such a tree by a linked data structure in which each node is an object. In addition to a _key_ and satellite data, each node contains attributes `left`, `right` and `p` that point to the nodes corresponding. If a child or the parent is missing, the appropriate attribute contains the value `NIL`.
 
 Basic operations on a BST take time proportional to the height of the tree. For a complete BST with `n` nodes, such operations run in `Theta(lg n)` __worst-case time__. If the tree is a linear chain of `n` nodes, however, the same operations take `Theta(n)` rost-case time. Luckly, the expected height of a randomly built BST is O(lg n), so basic dynamic-set operations on such a tree take `Theta(lg n)` time on __average__.
