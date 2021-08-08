@@ -78,6 +78,7 @@
 * [Greedy Algorithms](glossary/greedy-algorithms)
 * [Probablisitic Analysis](glossary/probabilistic-analysis.md)
 * [Randomized Algorithm](glossary/randomized-algo.md)
+* [Amortized Analysis](glossary/amortized-analysis)
 
 ## Well-known Problems
 
