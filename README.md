@@ -34,6 +34,7 @@
 * [Red-Black Tree](ds/trees/red-black-tree)
 * [Order-Statistic Tree](ds/trees/order-statistic-tree)
 * [Interval Tree](ds/trees/interval-tree)
+* [B-Trees](ds/trees/b-trees)
 
 #### Heap
 
