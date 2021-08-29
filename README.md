@@ -8,6 +8,7 @@
     * Cryptography
     * Sorting
     * Medians and Order Statistics
+    * Rate Limiting
 * Glossary
 * Well-known Problems
 
@@ -35,10 +36,9 @@
 * [Order-Statistic Tree](ds/trees/order-statistic-tree)
 * [Interval Tree](ds/trees/interval-tree)
 * [B-Trees](ds/trees/b-trees)
-
-#### Heap
-
-* [Binary Heap (Min/Max Heap)](ds/trees/heap/binary-heap)
+* Heaps
+  * [Binary Heap (Min/Max Heap)](ds/trees/heap/binary-heap)
+  * [Mergeable Heap](ds/trees/heap/mergeable-heap)
 
 ### Misc
 
@@ -67,6 +67,12 @@
 
 * [Minimum and maximum](statistics/min-max)
 * [Randomized Selection](statistics/randomized-selection)
+
+### [Rate Limiting](rate-limiting)
+
+* [Token Bucket](rate-limiting/token-bucket)
+* [Leaking Bucket](rate-limiting/leaking-bucket)
+* [Fixed Window Counter](rate-limiting/fixed-window-counter)
 
 ## Glossary
 
