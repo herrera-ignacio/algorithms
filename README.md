@@ -73,6 +73,8 @@
 * [Token Bucket](rate-limiting/token-bucket)
 * [Leaking Bucket](rate-limiting/leaking-bucket)
 * [Fixed Window Counter](rate-limiting/fixed-window-counter)
+* [Sliding Window Log](rate-limiting/sliding-window-log)
+* [Sliding Window Counter](rate-limiting/sliding-window-counter)
 
 ## Glossary
 
