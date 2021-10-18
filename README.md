@@ -96,5 +96,6 @@
 * [Rod Cutting](problems/rod-cutting)
 * [Matrix Chain Multiplication](problems/matrix-chain-mult)
 * [Longest common subsequence](problems/lcs)
-* [0-1 knapsack problem](problems/0-1-knapsack)
+* [0-1 Knapsack](problems/0-1-knapsack)
 * [Huffman Codes](problems/huffman-codes)
+* [Revenue Recognition](problems/revenue-recognition)
