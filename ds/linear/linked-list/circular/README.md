@@ -1,7 +1,8 @@
 # Circular Linked List
 
-* Overview
-  * Advantages
+- [Circular Linked List](#circular-linked-list)
+  - [Overview](#overview)
+  - [Advantages](#advantages)
 
 ## Overview
 
@@ -9,7 +10,7 @@
 
 *Circular Linked List* is a linked list where all nodes are connected to form a circle. There is no `null` at the end. It can be a *Singly* or *Doubly* Circular Linked List.
 
-### Advantages
+## Advantages
 
 1. **Any node can be a starting point**. We can traverse the whole list by starting from any point.
 

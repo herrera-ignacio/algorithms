@@ -1,13 +1,16 @@
 # B-Trees
 
-* Overview
-* Definition
-* The height of a B-tree
-* Basic Operations
-  * Search
-  * Create
-  * Insert
-  * Delete
+- [B-Trees](#b-trees)
+  - [Overview](#overview)
+  - [Definition](#definition)
+  - [The height of a B-tree](#the-height-of-a-b-tree)
+    - [Theorem](#theorem)
+  - [Basic Operations](#basic-operations)
+    - [Search $O(log_t n)$](#search-olog_t-n)
+    - [Create Empty $O(1)$](#create-empty-o1)
+    - [Insert $O(t log_t n)$](#insert-ot-log_t-n)
+      - [Splitting a Node $\Theta(t)$](#splitting-a-node-thetat)
+    - [Delete a key $O(th) = O(t log_t n)$](#delete-a-key-oth--ot-log_t-n)
 
 ## Overview
 

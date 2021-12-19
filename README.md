@@ -1,16 +1,19 @@
 # Algorithms & Data Structures
 
-* Data Structures
-    * Linear
-    * Trees
-    * Misc
-* Algorithms
-    * Cryptography
-    * Sorting
-    * Medians and Order Statistics
-    * Rate Limiting
-* Glossary
-* Well-known Problems
+- [Algorithms & Data Structures](#algorithms--data-structures)
+  - [Data Structures](#data-structures)
+    - [Linear](#linear)
+    - [Trees](#trees)
+    - [Misc](#misc)
+      - [Hashing](#hashing)
+  - [Algorithms](#algorithms)
+    - [Cryptography](#cryptography)
+    - [Sorting](#sorting)
+    - [Medians and Order Statistics](#medians-and-order-statistics)
+    - [Rate Limiting](#rate-limiting)
+  - [Glossary](#glossary)
+  - [Algorithm Design](#algorithm-design)
+  - [Well-known Problems](#well-known-problems)
 
 ---
 
@@ -80,7 +83,7 @@
 
 * [Set](ds/set)
 
-### Algorithm Design
+## Algorithm Design
 
 * [Divide and Conquer](glossary/dq.md)
 * [Dynamic Programming](glossary/dynamic-programming.md)
