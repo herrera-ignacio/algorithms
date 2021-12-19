@@ -81,6 +81,8 @@
 
 ### [Graph](graph)
 
+* [Breadth-first search](graph/bfs)
+
 ## Glossary
 
 * [Set](ds/set)
