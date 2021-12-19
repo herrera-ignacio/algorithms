@@ -39,9 +39,11 @@
 * [Order-Statistic Tree](ds/trees/order-statistic-tree)
 * [Interval Tree](ds/trees/interval-tree)
 * [B-Trees](ds/trees/b-trees)
+* [Van Emde Boas Trees](ds/trees/van-emde-boas)
 * Heaps
   * [Binary Heap (Min/Max Heap)](ds/trees/heap/binary-heap)
   * [Mergeable Heap](ds/trees/heap/mergeable-heap)
+  * [Fibonacci Heaps](ds/trees/heap/fibonacci)
 
 ### Misc
 
