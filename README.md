@@ -4,13 +4,13 @@
   - [Data Structures](#data-structures)
     - [Linear](#linear)
     - [Trees](#trees)
-    - [Misc](#misc)
-      - [Hashing](#hashing)
+    - [Others](#others)
   - [Algorithms](#algorithms)
     - [Cryptography](#cryptography)
     - [Sorting](#sorting)
     - [Medians and Order Statistics](#medians-and-order-statistics)
     - [Rate Limiting](#rate-limiting)
+    - [Graph](#graph)
   - [Glossary](#glossary)
   - [Algorithm Design](#algorithm-design)
   - [Well-known Problems](#well-known-problems)
@@ -45,11 +45,9 @@
   * [Mergeable Heap](ds/trees/heap/mergeable-heap)
   * [Fibonacci Heaps](ds/trees/heap/fibonacci)
 
-### Misc
+### Others
 
-#### Hashing
-
-* [Hash Table](ds/hashing/hash-table)
+* [Hash Table](ds/hash-table)
 
 ## Algorithms
 
@@ -80,6 +78,8 @@
 * [Fixed Window Counter](rate-limiting/fixed-window-counter)
 * [Sliding Window Log](rate-limiting/sliding-window-log)
 * [Sliding Window Counter](rate-limiting/sliding-window-counter)
+
+### [Graph](graph)
 
 ## Glossary
 
