@@ -82,6 +82,21 @@
 ### [Graph](graph)
 
 * [Breadth-first search](graph/bfs)
+* [Depth-first search](graph/dfs)
+* Minimum Spanning Trees
+  * Kruskal's algorithm
+  * Prim's algorithm
+* Single-Source Shortest Paths
+  * The Bellman-Ford algorithm
+  * Dijkstra's algorithm
+* All-Pairs Shortest Paths
+  * Floyd-Warshall algorithm
+  * Johnson's algorithm for sparse graphs
+* Maximum Flow
+  * Ford-Fulkerson method
+  * Edmonds-Karp algorithm
+  * Push-relabel algorithms
+  * Relabel-to-front algorithm
 
 ## Glossary
 
