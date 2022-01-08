@@ -4,6 +4,8 @@
   - [Data Structures](#data-structures)
     - [Linear](#linear)
     - [Trees](#trees)
+      - [Types](#types)
+      - [Traversal](#traversal)
     - [Others](#others)
   - [Algorithms](#algorithms)
     - [Cryptography](#cryptography)
@@ -31,6 +33,8 @@
 
 ### Trees
 
+#### Types
+
 * [Rooted Trees](ds/trees)
 * [Binary Tree](ds/trees/binary-tree)
 * [M-ary / K-ary Trees](ds/trees/m-ary)
@@ -38,12 +42,18 @@
 * [Red-Black Tree](ds/trees/red-black-tree)
 * [Order-Statistic Tree](ds/trees/order-statistic-tree)
 * [Interval Tree](ds/trees/interval-tree)
-* [B-Trees](ds/trees/b-trees)
+* [B-T](ds/trees/b-trees)
 * [Van Emde Boas Trees](ds/trees/van-emde-boas)
 * Heaps
   * [Binary Heap (Min/Max Heap)](ds/trees/heap/binary-heap)
   * [Mergeable Heap](ds/trees/heap/mergeable-heap)
   * [Fibonacci Heaps](ds/trees/heap/fibonacci)
+
+#### Traversal
+
+> [What is Tree Traversal?](ds/trees/traversal/README.md)
+
+* [DFS: Depth-first Search](ds/trees/traversal/dfs/README.md)
 
 ### Others
 
