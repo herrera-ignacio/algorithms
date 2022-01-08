@@ -3,6 +3,7 @@
 - [Tree Traversal](#tree-traversal)
   - [Overview](#overview)
   - [Types](#types)
+    - [Other types](#other-types)
   - [Data Structures for Tree Traversal](#data-structures-for-tree-traversal)
 
 ## Overview
@@ -11,10 +12,16 @@ _Tree traversal_ (also known as _tree search_ and _walking the tree_) is a form 
 
 ## Types
 
-They may be traversed in two ways:
+Trees are mainly traversed in two ways:
 
 * _depth-first_ (DFS): the search tree is deepened as much as possible before going to the next sibiling.
 * _breadth-first_ (BFS): the search tree is broadened as much as possible before going to the next sibiling. 
+
+### Other types
+
+There are also tree traversal algorithms that classify as neither depth-first search nor breadth-first search.
+
+One such algorithm is [Monte Carlo tree search](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search), which concentrates on analyzing the most promising moves, basing the expansion of the search tree on _random sampling_ of the search space.
 
 ## Data Structures for Tree Traversal
 

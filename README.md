@@ -54,6 +54,7 @@
 > [What is Tree Traversal?](ds/trees/traversal/README.md)
 
 * [DFS: Depth-first Search](ds/trees/traversal/dfs/README.md)
+* [BFS: Breadth-first Search](ds/trees/traversal/bfs/README.md)
 
 ### Others
 
