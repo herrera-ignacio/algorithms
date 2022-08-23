@@ -110,5 +110,6 @@
 - [Huffman Codes](problems/huffman-codes)
 - [Longest common subsequence](problems/lcs)
 - [Matrix Chain Multiplication](problems/matrix-chain-mult)
+- [Maximum subarray problem](problems/maximum-subarray-problem/README.md)
 - [Revenue Recognition](problems/revenue-recognition)
 - [Rod Cutting](problems/rod-cutting)
