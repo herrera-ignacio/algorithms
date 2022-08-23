@@ -6,6 +6,7 @@
     - [Cryptography](#cryptography)
     - [Graph](#graph)
     - [Medians and Order Statistics](#medians-and-order-statistics)
+    - [Problem-specific](#problem-specific)
     - [Sorting](#sorting)
     - [Rate Limiting](#rate-limiting)
     - [Trees](#trees)
@@ -67,6 +68,10 @@
 - [Minimum and maximum](statistics/min-max)
 - [Randomized Selection](statistics/randomized-selection)
 
+### Problem-specific
+
+- [Kadane's algorithm](problem-specific/kadane.md)
+
 ### [Sorting](sorting)
 
 - [Insertion sort](sorting/insertion_sort)
@@ -97,7 +102,7 @@
 
 - [Amortized Analysis](glossary/amortized-analysis)
 - [Divide and Conquer](glossary/dq.md)
-- [Dynamic Programming](glossary/dynamic-programming.md)
+- [Dynamic Programming](glossary/dynamic-programming/README.md)
 - [Greedy Algorithms](glossary/greedy-algorithms)
 - [Probablisitic Analysis](glossary/probabilistic-analysis.md)
 - [Randomized Algorithm](glossary/randomized-algo.md)
