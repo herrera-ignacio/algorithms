@@ -4,11 +4,11 @@
   - [Data Structures](#data-structures)
   - [Algorithms](#algorithms)
     - [Cryptography](#cryptography)
-    - [Sorting](#sorting)
+    - [Graph](#graph)
     - [Medians and Order Statistics](#medians-and-order-statistics)
+    - [Sorting](#sorting)
     - [Rate Limiting](#rate-limiting)
     - [Trees](#trees)
-    - [Graph](#graph)
   - [Algorithm Design](#algorithm-design)
   - [Well-known Problems](#well-known-problems)
 
@@ -43,37 +43,6 @@
 
 - [Caesar Cipher](crypto/caesar)
 
-### [Sorting](sorting)
-
-- [Insertion sort](sorting/insertion_sort)
-- [Mergesort](sorting/mergesort)
-- [Heapsort](sorting/heapsort)
-- [Quicksort](sorting/quicksort)
-- [Counting sort](sorting/counting_sort)
-- [Radix sort](sorting/radix_sort)
-- [Bucket sort](sorting/bucket_sort)
-- [Randomly](sorting/randomly)
-
-### [Medians and Order Statistics](statistics)
-
-- [Minimum and maximum](statistics/min-max)
-- [Randomized Selection](statistics/randomized-selection)
-
-### [Rate Limiting](rate-limiting)
-
-- [Token Bucket](rate-limiting/token-bucket)
-- [Leaking Bucket](rate-limiting/leaking-bucket)
-- [Fixed Window Counter](rate-limiting/fixed-window-counter)
-- [Sliding Window Log](rate-limiting/sliding-window-log)
-- [Sliding Window Counter](rate-limiting/sliding-window-counter)
-
-### Trees
-
-> [What is Tree Traversal?](ds/trees/traversal/README.md)
-
-- [DFS: Depth-first Search](ds/trees/traversal/dfs/README.md)
-- [BFS: Breadth-first Search](ds/trees/traversal/bfs/README.md)
-
 ### [Graph](graph)
 
 - [Breadth-first search](graph/bfs)
@@ -92,6 +61,37 @@
   - Edmonds-Karp algorithm
   - Push-relabel algorithms
   - Relabel-to-front algorithm
+
+### [Medians and Order Statistics](statistics)
+
+- [Minimum and maximum](statistics/min-max)
+- [Randomized Selection](statistics/randomized-selection)
+
+### [Sorting](sorting)
+
+- [Insertion sort](sorting/insertion_sort)
+- [Mergesort](sorting/mergesort)
+- [Heapsort](sorting/heapsort)
+- [Quicksort](sorting/quicksort)
+- [Counting sort](sorting/counting_sort)
+- [Radix sort](sorting/radix_sort)
+- [Bucket sort](sorting/bucket_sort)
+- [Randomly](sorting/randomly)
+
+### [Rate Limiting](rate-limiting)
+
+- [Token Bucket](rate-limiting/token-bucket)
+- [Leaking Bucket](rate-limiting/leaking-bucket)
+- [Fixed Window Counter](rate-limiting/fixed-window-counter)
+- [Sliding Window Log](rate-limiting/sliding-window-log)
+- [Sliding Window Counter](rate-limiting/sliding-window-counter)
+
+### Trees
+
+> [What is Tree Traversal?](ds/trees/traversal/README.md)
+
+- [DFS: Depth-first Search](ds/trees/traversal/dfs/README.md)
+- [BFS: Breadth-first Search](ds/trees/traversal/bfs/README.md)
 
 ## Algorithm Design
 
