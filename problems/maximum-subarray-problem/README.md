@@ -19,4 +19,4 @@ Some properties of this problem:
 
 ## Algorithms
 
-- [Kadane's algorithm](../problem-specific/kadane) ($(O(n)$)
+- [Kadane's algorithm](../problem-specific/kadane.md) $(O(n)$
