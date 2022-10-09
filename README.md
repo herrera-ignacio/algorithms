@@ -2,6 +2,7 @@
 
 - [Algorithms & Data Structures](#algorithms--data-structures)
   - [Data Structures](#data-structures)
+  - [Algorithm Design](#algorithm-design)
   - [Algorithms](#algorithms)
     - [Cryptography](#cryptography)
     - [Graph](#graph)
@@ -9,8 +10,7 @@
     - [Problem-specific](#problem-specific)
     - [Sorting](#sorting)
     - [Rate Limiting](#rate-limiting)
-    - [Trees](#trees)
-  - [Algorithm Design](#algorithm-design)
+    - [Searching](#searching)
   - [Well-known Problems](#well-known-problems)
 
 ## [Data Structures](ds)
@@ -37,6 +37,15 @@
   - [Van Emde Boas Trees](ds/trees/van-emde-boas)
 - [Queue](ds/linear/queue)
   - [Priority Queue](ds/linear/queue/priority-queue)
+
+## Algorithm Design
+
+- [Amortized Analysis](glossary/amortized-analysis)
+- [Divide and Conquer](glossary/dq.md)
+- [Dynamic Programming](glossary/dynamic-programming/README.md)
+- [Greedy Algorithms](glossary/greedy-algorithms)
+- [Probablisitic Analysis](glossary/probabilistic-analysis.md)
+- [Randomized Algorithm](glossary/randomized-algo.md)
 
 ## Algorithms
 
@@ -72,7 +81,7 @@
 
 - [Kadane's algorithm](problem-specific/kadane.md)
 
-### [Sorting](sorting)
+### [Sorting](sorting/README.md)
 
 - [Insertion sort](sorting/insertion_sort)
 - [Mergesort](sorting/mergesort)
@@ -83,7 +92,7 @@
 - [Bucket sort](sorting/bucket_sort)
 - [Randomly](sorting/randomly)
 
-### [Rate Limiting](rate-limiting)
+### [Rate Limiting](rate-limiting/README.md)
 
 - [Token Bucket](rate-limiting/token-bucket)
 - [Leaking Bucket](rate-limiting/leaking-bucket)
@@ -91,21 +100,13 @@
 - [Sliding Window Log](rate-limiting/sliding-window-log)
 - [Sliding Window Counter](rate-limiting/sliding-window-counter)
 
-### Trees
+### Searching
 
 > [What is Tree Traversal?](ds/trees/traversal/README.md)
 
-- [DFS: Depth-first Search](ds/trees/traversal/dfs/README.md)
-- [BFS: Breadth-first Search](ds/trees/traversal/bfs/README.md)
-
-## Algorithm Design
-
-- [Amortized Analysis](glossary/amortized-analysis)
-- [Divide and Conquer](glossary/dq.md)
-- [Dynamic Programming](glossary/dynamic-programming/README.md)
-- [Greedy Algorithms](glossary/greedy-algorithms)
-- [Probablisitic Analysis](glossary/probabilistic-analysis.md)
-- [Randomized Algorithm](glossary/randomized-algo.md)
+- [DFS: Depth-first Search $O(|V| + |E|)$](ds/trees/traversal/dfs/README.md)
+- [BFS: Breadth-first Search $O(|V| + |E|)$](ds/trees/traversal/bfs/README.md)
+- [Binary search $O(log\ n)$](searching/binary-search/README.md)
 
 ## Well-known Problems
 

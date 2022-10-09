@@ -4,6 +4,7 @@
   - [Overview](#overview)
   - [Technical details](#technical-details)
     - [Time and space complexity](#time-and-space-complexity)
+      - [Complexity in trees](#complexity-in-trees)
     - [An iterative implementation](#an-iterative-implementation)
   - [Use cases](#use-cases)
     - [Maze-solving](#maze-solving)
@@ -30,6 +31,12 @@ The time complexity can be expressed as $O(|V| + |E|)$, since every vertex $V$ a
 > Note that $O(|E|)$ may vary between $O(1)$ and $O(|V|^2)$, depending on how sparse the input graph is.
 
 When additional data structures are used to determine which vertices have already been added to the queue, the space complexity can be expressed as $O(|V|)$.
+
+#### Complexity in trees
+
+> Refer to this [SO post](https://stackoverflow.com/questions/64657483/time-complexity-of-bfs-and-dfs-on-a-binarytree-why-on).
+
+In case the graph is a tree, then the number of edges is $|V| - 1$. Therefore, the time complexity is $O(|V|)$ because $O(|V| + |E|) = O(|V| + |V| - 1)$.
 
 ### An iterative implementation
 

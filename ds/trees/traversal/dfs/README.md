@@ -2,6 +2,8 @@
 
 - [Depth-first Search](#depth-first-search)
   - [Overview](#overview)
+  - [Time complexity](#time-complexity)
+  - [Use cases](#use-cases)
   - [Base Algorithm](#base-algorithm)
     - [Apply to Arbitrary Trees](#apply-to-arbitrary-trees)
   - [Orders (types)](#orders-types)
@@ -17,6 +19,21 @@
 In _DFS_ the search tree is deepened as much as possible before going to the next sibiling.
 
 > Depth-first search is easily implemented via a stack, including recursively (via the call stack).
+
+## Time complexity
+
+Depth-first search visits every vertex once and checks every edge in the graph once. Therefore, DFS complexity is $O(|V| + |E|)$.
+
+It is mos space-efficient than _breadth-first search_ because BFS keeps a priority queue of the entire frontier while DFS maintains a few pointers at each level.
+
+## Use cases
+
+Depth-first search is used in:
+
+- Topological sorting.
+- Scheduling problems.
+- Cycle detection in graphs (e.g., spanning trees, mapping routes).
+- Solving puzzles with only one solution (e.g., maze, sudoku).
 
 ## Base Algorithm
 
@@ -90,4 +107,3 @@ The pre-order traversal is a _topologically sorted one_, because a parent node i
 3. Recursively traverse left subtree
 
 > In a _binary search tree_ ordered such that in each node the key is greater than all keys in its left subtree and less than all keys in its right subtree, _reverse in-order_ traversal retrieves the keys in _descending sorted order_.
-
