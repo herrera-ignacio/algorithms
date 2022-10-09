@@ -42,6 +42,7 @@
 
 - [Amortized Analysis](glossary/amortized-analysis/README.md)
 - [Divide and Conquer](glossary/dq.md)
+- [Recursion](glossary/recursion.md)
 - [Dynamic Programming](glossary/dynamic-programming/README.md)
 - [Greedy Algorithms](glossary/greedy-algorithms)
 - [Probablisitic Analysis](glossary/probabilistic-analysis.md)
