@@ -1,18 +1,27 @@
 # Sorting
 
+- [Sorting](#sorting)
+  - [Why Sorting?](#why-sorting)
+  - [Comparison Sorts](#comparison-sorts)
+    - [Worst-case time is Gamma(n lg n)](#worst-case-time-is-gamman-lg-n)
+  - [Other type of sorts](#other-type-of-sorts)
+  - [In-Place sorting](#in-place-sorting)
+  - [Stable sort](#stable-sort)
+  - [Sorting in linear time](#sorting-in-linear-time)
+
 ## Why Sorting?
 
 Sorting is considered to be the most fundamental problem in the study of algorithms.
 
-* Sometimes an applicant inherently needs to sort information. For example, in order to prepare customer statements, banks needs to sort checks by check number.
+- Sometimes an applicant inherently needs to sort information. For example, in order to prepare customer statements, banks needs to sort checks by check number.
 
-* Algorithms often use sorting as a key subroutine. For example, a program than renders graphical objects which are layered on top of each other, might hve to sort the objects according to an "above" relation so that it can draw these objects from bottom to top.
+- Algorithms often use sorting as a key subroutine. For example, a program than renders graphical objects which are layered on top of each other, might hve to sort the objects according to an "above" relation so that it can draw these objects from bottom to top.
 
-* We can draw from among a wide variety of sorting algortihms, and they employ a rich set of techniques. In fact, many important techniques used throughout algorithm design appear in the body of sorting algorithms that have been developed over the years. In this way, sorting is also a problem of historical interest.
+- We can draw from among a wide variety of sorting algortihms, and they employ a rich set of techniques. In fact, many important techniques used throughout algorithm design appear in the body of sorting algorithms that have been developed over the years. In this way, sorting is also a problem of historical interest.
 
-* We can prove a nontrivial lower bound for sorting. Our best upper bounds match the lower bound asymptotically, and so we know that our sorting algorithms are asymptotically optimal. Moreover, we can use the lower bound for sorting to prove lower bounds for certain other problems.
+- We can prove a nontrivial lower bound for sorting. Our best upper bounds match the lower bound asymptotically, and so we know that our sorting algorithms are asymptotically optimal. Moreover, we can use the lower bound for sorting to prove lower bounds for certain other problems.
 
-* Many engineering issues come to the fore when implementing sorting algorithms. The fastest sorting program for a particular situation may depend on many factors, such as prior knowledge about the keys and satellite data, the memory hierarchy of the host computer, and the software environment. Many of these issues are best dealth with at athe algorithmic level, rather than by "tweaking" the code.
+- Many engineering issues come to the fore when implementing sorting algorithms. The fastest sorting program for a particular situation may depend on many factors, such as prior knowledge about the keys and satellite data, the memory hierarchy of the host computer, and the software environment. Many of these issues are best dealth with at athe algorithmic level, rather than by "tweaking" the code.
 
 ## Comparison Sorts
 
@@ -33,7 +42,6 @@ A third algorithm, __Bucket Sort__, requires knowledge of the probabilistic dist
 ## In-Place sorting
 
 A sorting algorithm sorts __in-place__ if only a constant number of elements of the input array are ever stored outside the array.
-
 
 ## Stable sort
 

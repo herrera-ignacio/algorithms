@@ -40,7 +40,7 @@
 
 ## Algorithm Design
 
-- [Amortized Analysis](glossary/amortized-analysis)
+- [Amortized Analysis](glossary/amortized-analysis/README.md)
 - [Divide and Conquer](glossary/dq.md)
 - [Dynamic Programming](glossary/dynamic-programming/README.md)
 - [Greedy Algorithms](glossary/greedy-algorithms)
@@ -83,6 +83,7 @@
 
 ### [Sorting](sorting/README.md)
 
+- [Selection sort $O(n\ log\ n)$](sorting/selection_sort)
 - [Insertion sort](sorting/insertion_sort)
 - [Mergesort](sorting/mergesort)
 - [Heapsort](sorting/heapsort)
