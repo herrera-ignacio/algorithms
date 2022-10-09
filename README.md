@@ -4,6 +4,7 @@
   - [Data Structures](#data-structures)
   - [Algorithm Design](#algorithm-design)
   - [Algorithms](#algorithms)
+    - [Mathematics](#mathematics)
     - [Cryptography](#cryptography)
     - [Graph](#graph)
     - [Medians and Order Statistics](#medians-and-order-statistics)
@@ -49,6 +50,10 @@
 - [Randomized Algorithm](glossary/randomized-algo.md)
 
 ## Algorithms
+
+### Mathematics
+
+- [Greatest common divisor (GCD): Euclidean algorithm](maths/euclidean)
 
 ### Cryptography
 
