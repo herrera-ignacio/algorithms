@@ -12,7 +12,9 @@
     - [Sorting](#sorting)
     - [Rate Limiting](#rate-limiting)
     - [Searching](#searching)
-  - [Well-known Problems](#well-known-problems)
+  - [Solved problems](#solved-problems)
+    - [Well-known](#well-known)
+  - [Coding platforms](#coding-platforms)
 
 ## [Data Structures](ds)
 
@@ -115,7 +117,9 @@
 - [BFS: Breadth-first Search $O(|V| + |E|)$](ds/trees/traversal/bfs/README.md)
 - [Binary search $O(log\ n)$](searching/binary-search/README.md)
 
-## Well-known Problems
+## Solved problems
+
+### Well-known
 
 - [0-1 Knapsack](problems/0-1-knapsack)
 - [Activity Selection](problems/activity-selection)
@@ -126,3 +130,7 @@
 - [Maximum subarray problem](problems/maximum-subarray-problem/README.md)
 - [Revenue Recognition](problems/revenue-recognition)
 - [Rod Cutting](problems/rod-cutting)
+
+## Coding platforms
+
+- [Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
