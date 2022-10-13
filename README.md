@@ -15,6 +15,7 @@
   - [Solved problems](#solved-problems)
     - [Well-known](#well-known)
   - [Coding platforms](#coding-platforms)
+    - [Leetcode](#leetcode)
 
 ## [Data Structures](ds)
 
@@ -133,4 +134,8 @@
 
 ## Coding platforms
 
-- [Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
+### Leetcode
+
+- [237: Delete Node in a Linked List](problems/leetcode/237)
+- [976: Largest Perimeter Triangle](problems/leetcode/976)
+- [1509: Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
