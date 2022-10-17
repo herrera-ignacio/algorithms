@@ -64,9 +64,10 @@ There are three common ways to traverse them in _depth-first order_: **in-order,
 ![](2022-01-08-16-13-01.png)
 
 Depth-first traversal (dotted path) of a binary tree:
-* Pre-order (node visited at position red): F, B, A, D, C, E, G, I, H
-* In-order (node visited at position green): A, B, C, D, E, F, G, H, I
-* Post-order (node visited at position blue): A, C, E, D, B, H, I, G, F
+
+- Pre-order (node visited at position red): F, B, A, D, C, E, G, I, H
+- In-order (node visited at position green): A, B, C, D, E, F, G, H, I
+- Post-order (node visited at position blue): A, C, E, D, B, H, I, G, F
 
 ### Pre-order: NLR (red)
 
