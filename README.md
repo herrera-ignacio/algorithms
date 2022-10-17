@@ -139,4 +139,5 @@
 - [237: Delete node in a linked list](problems/leetcode/237)
 - [976: Largest perimeter triangle](problems/leetcode/976)
 - [1509: Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
+- [1832: Check if the sentence is pangram](problems/leetcode/1832)
 - [2095: Delete the middle node of a linked list](problems/leetcode/2095)
