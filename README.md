@@ -141,6 +141,7 @@
 - [112: Path sum](problems/leetcode/112)
 - [219: Contains duplicate II](problems/leetcode/219)
 - [237: Delete node in a linked list](problems/leetcode/237)
+- [433: Minimum genetic mutation](problems/leetcode/433)
 - [532: Continuous subarray sum](problems/leetcode/532)
 - [645: Set mismatch](problems/leetcode/645)
 - [766: Toeplitz Matrix](problems/leetcode/766)
