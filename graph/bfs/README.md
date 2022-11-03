@@ -2,7 +2,7 @@
 
 - [Breadth-first Search](#breadth-first-search)
   - [Definition](#definition)
-  - [Example Implementation](#example-implementation)
+  - [Example Implementation: Coloring](#example-implementation-coloring)
   - [Analysis](#analysis)
 
 ## Definition
@@ -21,11 +21,11 @@ To keep track of progress, BFS *colors* each vertex white, gray, or black. All v
 
 BFS constructs a breadth-first tree, initially containing only its *root*, which is the source vertex *s*. Whenever the search discovers a white vertex *v* in the course of scanning the adjacency list of an already discovered vertex *u*, the vertex *v* and the edge *(u,v)* are added to the tree.
 
-## Example Implementation
+## Example Implementation: Coloring
 
 The fllowing BFS implementation assumes that the input graph $G = (V, E)$ is represented using *adjacency lists*.
 
-```
+```pseudo
 BFS(G, s):
 
 for each vertex u in G.V - { s }

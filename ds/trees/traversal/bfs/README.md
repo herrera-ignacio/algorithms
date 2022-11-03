@@ -5,7 +5,8 @@
   - [Technical details](#technical-details)
     - [Time and space complexity](#time-and-space-complexity)
       - [Complexity in trees](#complexity-in-trees)
-    - [An iterative implementation](#an-iterative-implementation)
+  - [Implementation](#implementation)
+    - [Tree: iterative implementation](#tree-iterative-implementation)
   - [Use cases](#use-cases)
     - [Maze-solving](#maze-solving)
     - [Chess endgame](#chess-endgame)
@@ -38,21 +39,29 @@ When additional data structures are used to determine which vertices have alread
 
 In case the graph is a tree, then the number of edges is $|V| - 1$. Therefore, the time complexity is $O(|V|)$ because $O(|V| + |E|) = O(|V| + |V| - 1)$.
 
-### An iterative implementation
+## Implementation
+
+### Tree: iterative implementation
 
 ```pseudo
- 1  procedure BFS(G, root) is
- 2      let Q be a queue
- 3      label root as explored
- 4      Q.enqueue(root)
- 5      while Q is not empty do
- 6          v := Q.dequeue()
- 7          if v is the goal then
- 8              return v
- 9          for all edges from v to w in G.adjacentEdges(v) do
-10              if w is not labeled as explored then
-11                  label w as explored
-12                  Q.enqueue(w)
+procedure BFS(T, root)
+    let Q be queue
+    label root as visited
+    Q.enqueue(root)
+
+    while Q is not empty
+        v = Q.dequeue()
+
+        // Some logic with v here
+
+        if v is the end
+          return v
+
+        for all edges from v to w in T.adjacentEdges(v) do
+            // For a binary tree, those are the left and right children
+            if edge is not visited
+                label edge as visited
+                Q.enqueue(edge)
 ```
 
 1. It uses a _queue_ (FIFO).
