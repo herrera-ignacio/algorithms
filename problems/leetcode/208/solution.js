@@ -3,7 +3,6 @@
 
 const assert = require('assert');
 
-
 class TrieNode {
   constructor() {
     this.links = new Array(26);
@@ -42,7 +41,7 @@ class TrieNode {
    * @param {string} c 
    * @param {TrieNode} node 
    */
-  insert(c, node) {
+  set(c, node) {
     this.links[this.getCharIndex(c)] = node;
   }
 }
@@ -63,7 +62,7 @@ class Trie {
     for (let c of word) {
       if (!node.containsKey(c)) {
         const newNode = new TrieNode();
-        node.insert(c, newNode);
+        node.set(c, newNode);
         node = newNode;
       } else {
         node = node.get(c);
