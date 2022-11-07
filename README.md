@@ -143,6 +143,7 @@
 - [212: Word Search II](problems/leetcode/212)
 - [219: Contains duplicate II](problems/leetcode/219)
 - [237: Delete node in a linked list](problems/leetcode/237)
+- [345: Reverse vowels of a string](problems/leetcode/345)
 - [433: Minimum genetic mutation](problems/leetcode/433)
 - [532: Continuous subarray sum](problems/leetcode/532)
 - [645: Set mismatch](problems/leetcode/645)
