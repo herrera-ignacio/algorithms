@@ -29,6 +29,7 @@
 - Tree
   - [Binary Search Tree](ds/trees/bst)
   - [Binary Tree](ds/trees/binary-tree)
+  - [Trie (Prefix tree)](ds/trees/trie)
   - [B-T](ds/trees/b-trees)
   - Heaps
     - [Binary Heap (Min/Max Heap)](ds/trees/heap/binary-heap)
@@ -147,9 +148,11 @@
 - [433: Minimum genetic mutation](problems/leetcode/433)
 - [532: Continuous subarray sum](problems/leetcode/532)
 - [645: Set mismatch](problems/leetcode/645)
-- [766: Toeplitz Matrix](problems/leetcode/766)
+- [766: Toeplitz matrix](problems/leetcode/766)
+- [899: Orderly queue](problems/leetcode/899)
 - [976: Largest perimeter triangle](problems/leetcode/976)
 - [1239: Maximum length of a concatenated string with unique characters](problems/leetcode/1239)
+- [1323: Maximum 69 number](problems/leetcode/1323)
 - [1509: Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
 - [1706: Where will the ball fall](problems/leetcode/1706)
 - [1832: Check if the sentence is pangram](problems/leetcode/1832)
