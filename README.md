@@ -150,10 +150,12 @@
 - [645: Set mismatch](problems/leetcode/645)
 - [766: Toeplitz matrix](problems/leetcode/766)
 - [899: Orderly queue](problems/leetcode/899)
+- [901: Stock plan](problems/leetcode/901) - Monotonic stack
 - [976: Largest perimeter triangle](problems/leetcode/976)
 - [1239: Maximum length of a concatenated string with unique characters](problems/leetcode/1239)
 - [1323: Maximum 69 number](problems/leetcode/1323)
 - [1509: Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
+- [1544: Make the string great](problems/leetcode/1544)
 - [1706: Where will the ball fall](problems/leetcode/1706)
 - [1832: Check if the sentence is pangram](problems/leetcode/1832)
 - [2095: Delete the middle node of a linked list](problems/leetcode/2095)
