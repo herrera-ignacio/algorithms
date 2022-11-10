@@ -152,6 +152,7 @@
 - [899: Orderly queue](problems/leetcode/899)
 - [901: Stock plan](problems/leetcode/901) - Monotonic stack
 - [976: Largest perimeter triangle](problems/leetcode/976)
+- [1047: Remove all adjacent duplicates in a string](problems/leetcode/1047) - Stack
 - [1239: Maximum length of a concatenated string with unique characters](problems/leetcode/1239)
 - [1323: Maximum 69 number](problems/leetcode/1323)
 - [1509: Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
