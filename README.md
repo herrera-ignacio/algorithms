@@ -138,6 +138,7 @@
 ### Leetcode
 
 - [12: Integer to roman](problems/leetcode/12)
+- [26: Remove duplicates from sorted array](problems/leetcode/26) - Array
 - [76: Minimum sindow substring](problems/leetcode/76)
 - [112: Path sum](problems/leetcode/112)
 - [208 Implement Trie (Prefix Tree)](problems/leetcode/208)
