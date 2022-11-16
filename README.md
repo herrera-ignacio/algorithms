@@ -148,6 +148,7 @@
 - [222: Count complete tree nodes](problems/leetcode/222)
 - [237: Delete node in a linked list](problems/leetcode/237)
 - [345: Reverse vowels of a string](problems/leetcode/345)
+- [374: Guess number higher or lower](problems/leetcode/374)
 - [433: Minimum genetic mutation](problems/leetcode/433)
 - [532: Continuous subarray sum](problems/leetcode/532)
 - [645: Set mismatch](problems/leetcode/645)
