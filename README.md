@@ -146,6 +146,7 @@
 - [212: Word Search II](problems/leetcode/212)
 - [219: Contains duplicate II](problems/leetcode/219)
 - [222: Count complete tree nodes](problems/leetcode/222)
+- [223: Rectangle area](problems/leetcode/223)
 - [237: Delete node in a linked list](problems/leetcode/237)
 - [345: Reverse vowels of a string](problems/leetcode/345)
 - [374: Guess number higher or lower](problems/leetcode/374)
