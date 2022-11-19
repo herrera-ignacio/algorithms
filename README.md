@@ -153,6 +153,7 @@
 - [374: Guess number higher or lower](problems/leetcode/374)
 - [433: Minimum genetic mutation](problems/leetcode/433)
 - [532: Continuous subarray sum](problems/leetcode/532)
+- [587: Erect the fence](problems/leetcode/587)
 - [645: Set mismatch](problems/leetcode/645)
 - [766: Toeplitz matrix](problems/leetcode/766)
 - [899: Orderly queue](problems/leetcode/899)
