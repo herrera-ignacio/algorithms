@@ -147,6 +147,7 @@
 - [219: Contains duplicate II](problems/leetcode/219)
 - [222: Count complete tree nodes](problems/leetcode/222)
 - [223: Rectangle area](problems/leetcode/223)
+- [224: Basic calculator](problems/leetcode/224)
 - [237: Delete node in a linked list](problems/leetcode/237)
 - [263: Ugly number](problems/leetcode/263)
 - [345: Reverse vowels of a string](problems/leetcode/345)
