@@ -1,6 +1,6 @@
 # Algorithms & Data Structures
 
-- [Algorithms & Data Structures](#algorithms--data-structures)
+- [Algorithms \& Data Structures](#algorithms--data-structures)
   - [Data Structures](#data-structures)
   - [Algorithm Design](#algorithm-design)
   - [Algorithms](#algorithms)
@@ -168,5 +168,6 @@
 - [1544: Make the string great](problems/leetcode/1544)
 - [1706: Where will the ball fall](problems/leetcode/1706)
 - [1832: Check if the sentence is pangram](problems/leetcode/1832)
+- [1926: Nearest exit from entrance in maze](problems/leetcode/1926)
 - [2095: Delete the middle node of a linked list](problems/leetcode/2095)
 - [2131: Longest palindrome by concatenating two letter words](problems/leetcode/2131)
