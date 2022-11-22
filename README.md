@@ -150,6 +150,7 @@
 - [224: Basic calculator](problems/leetcode/224)
 - [237: Delete node in a linked list](problems/leetcode/237)
 - [263: Ugly number](problems/leetcode/263)
+- [279: Perfect squares](problems/leetcode/279): BFS
 - [345: Reverse vowels of a string](problems/leetcode/345)
 - [374: Guess number higher or lower](problems/leetcode/374)
 - [433: Minimum genetic mutation](problems/leetcode/433)
