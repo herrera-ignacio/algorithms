@@ -164,6 +164,7 @@
 - [947 - Most stones removed with same row or column](problems/leetcode/947)
 - [976: Largest perimeter triangle](problems/leetcode/976)
 - [1047: Remove all adjacent duplicates in a string](problems/leetcode/1047) - Stack
+- [1235: Maximum profit in job scheduling](problems/leetcode/1235) - Dynamic Programming + Binary Search
 - [1239: Maximum length of a concatenated string with unique characters](problems/leetcode/1239)
 - [1323: Maximum 69 number](problems/leetcode/1323)
 - [1509: Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
@@ -172,5 +173,5 @@
 - [1832: Check if the sentence is pangram](problems/leetcode/1832)
 - [1926: Nearest exit from entrance in maze](problems/leetcode/1926)
 - [2095: Delete the middle node of a linked list](problems/leetcode/2095)
-- [2225: Find players with zero or one losses](problems/leetcode/2225)
+- [2225: Find players with zero or one losses](problems/leetcode/2225) - Map
 - [2131: Longest palindrome by concatenating two letter words](problems/leetcode/2131)
