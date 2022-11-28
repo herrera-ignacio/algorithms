@@ -161,6 +161,7 @@
 - [766: Toeplitz matrix](problems/leetcode/766)
 - [899: Orderly queue](problems/leetcode/899)
 - [901: Stock plan](problems/leetcode/901) - Monotonic stack
+- [907: Sum of subarray minimums](problems/leetcode/907) - Monotonic stack
 - [947 - Most stones removed with same row or column](problems/leetcode/947)
 - [976: Largest perimeter triangle](problems/leetcode/976)
 - [1047: Remove all adjacent duplicates in a string](problems/leetcode/1047) - Stack
