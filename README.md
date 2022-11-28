@@ -172,4 +172,5 @@
 - [1832: Check if the sentence is pangram](problems/leetcode/1832)
 - [1926: Nearest exit from entrance in maze](problems/leetcode/1926)
 - [2095: Delete the middle node of a linked list](problems/leetcode/2095)
+- [2225: Find players with zero or one losses](problems/leetcode/2225)
 - [2131: Longest palindrome by concatenating two letter words](problems/leetcode/2131)
