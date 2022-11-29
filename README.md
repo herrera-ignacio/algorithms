@@ -14,6 +14,7 @@
     - [Searching](#searching)
   - [Solved problems](#solved-problems)
     - [Well-known](#well-known)
+  - [Language data structures complexity](#language-data-structures-complexity)
   - [Coding platforms](#coding-platforms)
     - [Leetcode](#leetcode)
 
@@ -132,6 +133,10 @@
 - [Maximum subarray problem](problems/maximum-subarray-problem/README.md)
 - [Revenue Recognition](problems/revenue-recognition)
 - [Rod Cutting](problems/rod-cutting)
+
+## Language data structures complexity
+
+- [JavaScript](languages/js/README.md)
 
 ## Coding platforms
 
