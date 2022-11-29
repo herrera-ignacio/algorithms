@@ -165,6 +165,7 @@
 - [947 - Most stones removed with same row or column](problems/leetcode/947)
 - [976: Largest perimeter triangle](problems/leetcode/976)
 - [1047: Remove all adjacent duplicates in a string](problems/leetcode/1047) - Stack
+- [1198: Find smallest common element in all rows](problems/leetcode/1198) - Matrix
 - [1235: Maximum profit in job scheduling](problems/leetcode/1235) - Dynamic Programming + Binary Search
 - [1239: Maximum length of a concatenated string with unique characters](problems/leetcode/1239)
 - [1323: Maximum 69 number](problems/leetcode/1323)
