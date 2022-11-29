@@ -159,6 +159,7 @@
 - [279: Perfect squares](problems/leetcode/279): BFS
 - [345: Reverse vowels of a string](problems/leetcode/345)
 - [374: Guess number higher or lower](problems/leetcode/374)
+- [380: Insert Delete GetRandom O(1)](problems/leetcode/380) - Hash Map + Array
 - [433: Minimum genetic mutation](problems/leetcode/433)
 - [532: Continuous subarray sum](problems/leetcode/532)
 - [587: Erect the fence](problems/leetcode/587)
