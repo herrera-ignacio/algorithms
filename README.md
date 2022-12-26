@@ -146,6 +146,7 @@
 - [26: Remove duplicates from sorted array](problems/leetcode/26) - Array
 - [36: Valid sudoku](problems/leetcode/36) - Array / Matrix
 - [76: Minimum sindow substring](problems/leetcode/76)
+- [79: Word search](problems/leetcode/79)
 - [112: Path sum](problems/leetcode/112)
 - [151: Reverse words in a string](problems/leetcode/151)
 - [208 Implement Trie (Prefix Tree)](problems/leetcode/208)
