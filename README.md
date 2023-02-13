@@ -2,6 +2,8 @@
 
 - [Algorithms \& Data Structures](#algorithms--data-structures)
   - [Data Structures](#data-structures)
+    - [Time complexity](#time-complexity)
+    - [Types](#types)
   - [Algorithm Design](#algorithm-design)
   - [Algorithms](#algorithms)
     - [Mathematics](#mathematics)
@@ -9,9 +11,9 @@
     - [Graph](#graph)
     - [Medians and Order Statistics](#medians-and-order-statistics)
     - [Problem-specific](#problem-specific)
-    - [Sorting](#sorting)
     - [Rate Limiting](#rate-limiting)
     - [Searching](#searching)
+    - [Sorting](#sorting)
   - [Solved problems](#solved-problems)
     - [Well-known](#well-known)
   - [Language data structures complexity](#language-data-structures-complexity)
@@ -19,6 +21,17 @@
     - [Leetcode](#leetcode)
 
 ## [Data Structures](ds)
+
+### Time complexity
+
+| Data Structure | Reading | Insertion | Deletion |
+|----------------|---------|-----------|----------|
+| Array          | $O(1)$  | $O(n)$    | $O(n)$   |
+| List           | $O(n)$  | $O(1)$    | $O(1)$   |
+
+> This is only a high-level overview of base implementations. Usually, you'd be able to optimize data structures for specific use cases by making some assumptions and tweaks.
+
+### Types
 
 - [Array](ds/linear/array)
 - [Hash Table](ds/hash-table)
@@ -92,18 +105,6 @@
 
 - [Kadane's algorithm](problem-specific/kadane.md)
 
-### [Sorting](sorting/README.md)
-
-- [Selection sort $O(n\ log\ n)$](sorting/selection_sort)
-- [Insertion sort](sorting/insertion_sort)
-- [Mergesort](sorting/mergesort)
-- [Heapsort](sorting/heapsort)
-- [Quicksort](sorting/quicksort)
-- [Counting sort](sorting/counting_sort)
-- [Radix sort](sorting/radix_sort)
-- [Bucket sort](sorting/bucket_sort)
-- [Randomly](sorting/randomly)
-
 ### [Rate Limiting](rate-limiting/README.md)
 
 - [Token Bucket](rate-limiting/token-bucket)
@@ -118,7 +119,21 @@
 
 - [DFS: Depth-first Search $O(|V| + |E|)$](ds/trees/traversal/dfs/README.md)
 - [BFS: Breadth-first Search $O(|V| + |E|)$](ds/trees/traversal/bfs/README.md)
-- [Binary search $O(log\ n)$](searching/binary-search/README.md)
+- [Binary search $O(log_2\ n)$](searching/binary-search/README.md)
+
+### [Sorting](sorting/README.md)
+
+| Algorithm                                | Time           | Space  | Stable |
+|------------------------------------------|----------------|--------|--------|
+| [Selection sort](sorting/selection_sort) | $O(n^2)$       | $O(1)$ | No     |
+| [Insertion sort](sorting/insertion_sort) | $O(n^2)$       | $O(1)$ | Yes    |
+| [Mergesort](sorting/mergesort)           |                |        |        |
+| [Heapsort](sorting/heapsort)             |                |        |        |
+| [Quicksort](sorting/quicksort)           | $O(n\ log\ n)$ |        |        |
+| [Counting sort](sorting/counting_sort)   |                |        |        |
+| [Radix sort](sorting/radix_sort)         |                |        |        |
+| [Bucket sort](sorting/bucket_sort)       |                |        |        |
+| [Randomly](sorting/randomly)             |                |        |        |
 
 ## Solved problems
 
