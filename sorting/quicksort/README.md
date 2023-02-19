@@ -16,6 +16,8 @@
 
 Often the best practical choice for sorting because it is remarkably efficient on the average, expected running time is $O(n\ lg\ n)$, and the hidden constant factors are quite small.
 
+Moreover, Quicksort has a __smaller constant than merge sort__. So if they're both $O(n log n)$ time, quicksort is faster, and in practice it is because it hits the average case way more often than the worst case.
+
 ## Complexity
 
 |       | Worst | Best | Average |

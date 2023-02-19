@@ -4,7 +4,7 @@
   - [Usage](#usage)
   - [Complexity](#complexity)
   - [Explanation](#explanation)
-  - [Implementation details](#implementation-details)
+  - [Implementation](#implementation)
 
 ## Usage
 
@@ -23,6 +23,6 @@
 
 <!-- Explain how it works -->
 
-## Implementation details
+## Implementation
 
 <!-- Optimizations, tweaks -->
