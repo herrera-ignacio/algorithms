@@ -4,7 +4,7 @@
   - [Overview](#overview)
   - [Directed and Undirected Graphs](#directed-and-undirected-graphs)
   - [Representation](#representation)
-  - [Adjacency-list representation](#adjacency-list-representation)
+    - [Adjacency-list representation](#adjacency-list-representation)
 
 ## Overview
 
@@ -20,18 +20,18 @@ The object correspond to mathematical abstractions called _vertices_ (also _node
 
 In contrast, if any edge from a person A to a person B corresponds to A owes money to B, then this graph is directed, because owing money is **not necessarily reciprocated**.
 
-The former type of graph is called an _undirected graph_ while the latter type of graph is called a _directed graph_. 
+The former type of graph is called an _undirected graph_ while the latter type of graph is called a _directed graph_.
 
 ## Representation
 
-There are two standard ways to represent a graph *G = (V, E)*, either directed or unidirected:
+There are two standard ways to represent a graph $G = (V, E)$, either directed or unidirected:
 
-1. Collection of adjancency lists
-2. Adjancency matrix 
+1. Collection of adjancency lists.
+2. Adjancency matrix.
 
-Because *adjacency-list* representation provides a compact way to represent **sparse** graphs - those for which $|E|$ is much less than $|V|^2$ - it is usually the method of choice.
+Because _adjacency-list_ representation provides a compact way to represent **sparse** graphs - those for which $|E|$ is much less than $|V|^2$ - it is usually the method of choice.
 
-We may prefer an *adjacency-matrix* representation when the graph is **dense** - $|E|$ is close to $|V|^2$ - or when we need to be able to tell quickly if there is an edge connecting two given vertices.
+We may prefer an _adjacency-matrix_ representation when the graph is **dense** ($|E|$ is close to $|V|^2$) or when we need to be able to tell quickly if there is an edge connecting two given vertices.
 
 ![](2021-12-19-20-11-42.png)
 
@@ -41,6 +41,6 @@ We may prefer an *adjacency-matrix* representation when the graph is **dense** -
 
 > (a) A directed graph G with 6 vertices and 8 edges. (b) An adjacency-list representation of G. (c) The adjacency-matrix representation of G.
 
-## Adjacency-list representation
+### Adjacency-list representation
 
-The adjacency-list representation of a graph *G = (V, E)* consists of an array *Adj* of *|V|* lists, one for each vertex in *V*. For each $u \in V$, the adjacency list *Adj[u]* contains all the vertices *v* such that there is an edge $(u,v) \in E$. That is, *Adj[u]* consists of all the vertices adjacent to *u* in *G*.
+The adjacency-list representation of a graph _G = (V, E)_ consists of an array _Adj_ of _|V|_ lists, one for each vertex in _V_. For each $u \in V$, the adjacency list _Adj[u]_ contains all the vertices _v_ such that there is an edge $(u,v) \in E$. That is, _Adj[u]_ consists of all the vertices adjacent to _u_ in _G_.

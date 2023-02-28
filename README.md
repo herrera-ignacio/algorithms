@@ -118,7 +118,7 @@
 > [What is Tree Traversal?](ds/trees/traversal/README.md)
 
 - [DFS: Depth-first Search $O(|V| + |E|)$](ds/trees/traversal/dfs/README.md)
-- [BFS: Breadth-first Search $O(|V| + |E|)$](ds/trees/traversal/bfs/README.md)
+- [BFS: Breadth-first Search $O(|V| + |E|)$](graph/bfs/README.md)
 - [Binary search $O(log_2\ n)$](searching/binary-search/README.md)
 
 ### [Sorting](sorting/README.md)
