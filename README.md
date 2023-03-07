@@ -129,7 +129,7 @@
 | [Insertion sort](sorting/insertion_sort) | $O(n^2)$       | $O(1)$ | Yes    |
 | [Mergesort](sorting/mergesort)           |                |        |        |
 | [Heapsort](sorting/heapsort)             |                |        |        |
-| [Quicksort](sorting/quicksort)           | $O(n\ log\ n)$ |        |        |
+| [Quicksort](sorting/quicksort)           | $O(n\ log\ n)$ | $O(log(n))$ | No |
 | [Counting sort](sorting/counting_sort)   |                |        |        |
 | [Radix sort](sorting/radix_sort)         |                |        |        |
 | [Bucket sort](sorting/bucket_sort)       |                |        |        |
