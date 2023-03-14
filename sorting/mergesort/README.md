@@ -1,4 +1,11 @@
-# Merge Sort - O(n log n)
+# Merge Sort
+
+- [Merge Sort](#merge-sort)
+  - [Overview](#overview)
+  - [Complexity](#complexity)
+  - [Pseudocode](#pseudocode)
+
+## Overview
 
 Merge sort algorithm closely follows the divide-and-conquer paradigm.
 
@@ -10,15 +17,15 @@ Merge sort algorithm closely follows the divide-and-conquer paradigm.
 
 The recursion "bottoms out" when the sequence to be sorted has length 1. The key operation is the merging of two sorted sequences in the "combine" step.
 
-## Characteristics
+## Complexity
 
-* In Place
-* Worst Time O(n log n)
-* Worst Space O(n)
+- Worst Time $O(n log n)$
+- Worst Space $O(n)$
+- In place
 
 ## Pseudocode
 
-```
+```pseudo
 MERGE(A, p, q, r):
   n1 = q - p + 1
   n2 = r - q
