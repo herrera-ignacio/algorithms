@@ -158,7 +158,7 @@
 ### Leetcode
 
 - [12: Integer to roman](problems/leetcode/12)
-- [26: Remove duplicates from sorted array](problems/leetcode/26) - Array
+- [26: Remove duplicates from sorted array](problems/leetcode/26) - Easy - Array
 - [36: Valid sudoku](problems/leetcode/36) - Array / Matrix
 - [76: Minimum sindow substring](problems/leetcode/76)
 - [79: Word search](problems/leetcode/79)
@@ -173,7 +173,8 @@
 - [224: Basic calculator](problems/leetcode/224)
 - [237: Delete node in a linked list](problems/leetcode/237)
 - [263: Ugly number](problems/leetcode/263)
-- [279: Perfect squares](problems/leetcode/279): BFS
+- [279: Perfect squares](problems/leetcode/279) - Trees - BFS
+- [283: Move Zeroes](problems/leetcode/283) - Easy - Array
 - [345: Reverse vowels of a string](problems/leetcode/345)
 - [374: Guess number higher or lower](problems/leetcode/374)
 - [380: Insert Delete GetRandom O(1)](problems/leetcode/380) - Hash Map + Array
