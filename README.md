@@ -1,24 +1,23 @@
 # Algorithms & Data Structures
 
-- [Algorithms \& Data Structures](#algorithms--data-structures)
-  - [Data Structures](#data-structures)
-    - [Time complexity](#time-complexity)
-    - [Types](#types)
-  - [Algorithm Design](#algorithm-design)
-  - [Algorithms](#algorithms)
-    - [Mathematics](#mathematics)
-    - [Cryptography](#cryptography)
-    - [Graph](#graph)
-    - [Medians and Order Statistics](#medians-and-order-statistics)
-    - [Problem-specific](#problem-specific)
-    - [Rate Limiting](#rate-limiting)
-    - [Searching](#searching)
-    - [Sorting](#sorting)
-  - [Solved problems](#solved-problems)
-    - [Well-known](#well-known)
-  - [Language data structures complexity](#language-data-structures-complexity)
-  - [Coding platforms](#coding-platforms)
-    - [Leetcode](#leetcode)
+- [Data Structures](#data-structures)
+  - [Time complexity](#time-complexity)
+  - [Types](#types)
+- [Algorithm Design](#algorithm-design)
+- [Algorithms](#algorithms)
+  - [Mathematics](#mathematics)
+  - [Cryptography](#cryptography)
+  - [Graph](#graph)
+  - [Medians and Order Statistics](#medians-and-order-statistics)
+  - [Problem-specific](#problem-specific)
+  - [Rate Limiting](#rate-limiting)
+  - [Searching](#searching)
+  - [Sorting](#sorting)
+- [Solved problems](#solved-problems)
+  - [Well-known](#well-known)
+- [Language data structures complexity](#language-data-structures-complexity)
+- [Coding platforms](#coding-platforms)
+  - [Leetcode](#leetcode)
 
 ## [Data Structures](ds)
 
@@ -186,6 +185,7 @@
 - [766: Toeplitz matrix](problems/leetcode/766)
 - [899: Orderly queue](problems/leetcode/899)
 - [901: Stock plan](problems/leetcode/901) - Monotonic stack
+- [905: Sort array by parity](problems/leetcode/905) - Easy - Array
 - [907: Sum of subarray minimums](problems/leetcode/907) - Monotonic stack
 - [941: Valid mountain array](problems/leetcode/941) - Easy - Array
 - [947 - Most stones removed with same row or column](problems/leetcode/947)
