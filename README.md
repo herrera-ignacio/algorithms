@@ -158,6 +158,7 @@
 
 - [12: Integer to roman](problems/leetcode/12)
 - [26: Remove duplicates from sorted array](problems/leetcode/26) - Easy - Array
+- [27: Remove element](problems/leetcode/27) - Easy - Array
 - [36: Valid sudoku](problems/leetcode/36) - Array / Matrix
 - [76: Minimum sindow substring](problems/leetcode/76)
 - [79: Word search](problems/leetcode/79)
