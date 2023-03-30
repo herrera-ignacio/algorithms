@@ -181,6 +181,7 @@
 - [380: Insert Delete GetRandom O(1)](problems/leetcode/380) - Hash Map + Array
 - [433: Minimum genetic mutation](problems/leetcode/433)
 - [485: Max consecutive ones](problems/leetcode/485) - Array
+- [487: Max consecutive ones II](problems/leetcode/487) - Medium - Array
 - [532: Continuous subarray sum](problems/leetcode/532)
 - [587: Erect the fence](problems/leetcode/587)
 - [645: Set mismatch](problems/leetcode/645)
