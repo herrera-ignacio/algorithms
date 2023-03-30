@@ -156,6 +156,7 @@
 
 ### Leetcode
 
+- [X - Height Checker](problems/leetcode/x/height-checker)
 - [12: Integer to roman](problems/leetcode/12)
 - [26: Remove duplicates from sorted array](problems/leetcode/26) - Easy - Array
 - [27: Remove element](problems/leetcode/27) - Easy - Array
