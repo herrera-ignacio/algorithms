@@ -179,6 +179,7 @@
 - [345: Reverse vowels of a string](problems/leetcode/345)
 - [374: Guess number higher or lower](problems/leetcode/374)
 - [380: Insert Delete GetRandom O(1)](problems/leetcode/380) - Hash Map + Array
+- [414: Third maximum number](problems/leetcode/414) - Easy - Array
 - [433: Minimum genetic mutation](problems/leetcode/433)
 - [485: Max consecutive ones](problems/leetcode/485) - Array
 - [487: Max consecutive ones II](problems/leetcode/487) - Medium - Array
