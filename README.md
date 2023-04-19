@@ -181,6 +181,7 @@
 - [380: Insert Delete GetRandom O(1)](problems/leetcode/380) - Hash Map + Array
 - [414: Third maximum number](problems/leetcode/414) - Easy - Array
 - [433: Minimum genetic mutation](problems/leetcode/433)
+- [448: Find all numbers disappeared in an array](problems/leetcode/448) - Easy - Array
 - [485: Max consecutive ones](problems/leetcode/485) - Array
 - [487: Max consecutive ones II](problems/leetcode/487) - Medium - Array
 - [532: Continuous subarray sum](problems/leetcode/532)
