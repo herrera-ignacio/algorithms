@@ -1,44 +1,47 @@
 # Algorithms & Data Structures
 
-- [Data Structures](#data-structures)
-  - [Time complexity](#time-complexity)
-  - [Types](#types)
-- [Algorithm Design](#algorithm-design)
-- [Algorithms](#algorithms)
-  - [Mathematics](#mathematics)
-  - [Cryptography](#cryptography)
-  - [Graph](#graph)
-  - [Medians and Order Statistics](#medians-and-order-statistics)
-  - [Problem-specific](#problem-specific)
-  - [Rate Limiting](#rate-limiting)
-  - [Searching](#searching)
-  - [Sorting](#sorting)
-- [Solved problems](#solved-problems)
-  - [Well-known](#well-known)
-- [Language data structures complexity](#language-data-structures-complexity)
-- [Coding platforms](#coding-platforms)
-  - [Leetcode](#leetcode)
+- [Algorithms \& Data Structures](#algorithms--data-structures)
+  - [Data Structures](#data-structures)
+    - [Time complexity](#time-complexity)
+    - [Types](#types)
+    - [Language-specific complexity](#language-specific-complexity)
+  - [Algorithm Design](#algorithm-design)
+  - [Algorithms](#algorithms)
+    - [Mathematics](#mathematics)
+    - [Cryptography](#cryptography)
+    - [Graph](#graph)
+    - [Medians and Order Statistics](#medians-and-order-statistics)
+    - [Problem-specific](#problem-specific)
+    - [Rate Limiting](#rate-limiting)
+    - [Searching](#searching)
+    - [Sorting](#sorting)
+  - [Solved problems](#solved-problems)
+    - [Well-known](#well-known)
+  - [Coding platforms](#coding-platforms)
+    - [Leetcode](#leetcode)
 
 ## [Data Structures](ds)
 
 ### Time complexity
 
-| Data Structure | Reading | Insertion | Deletion |
-|----------------|---------|-----------|----------|
-| Array          | $O(1)$  | $O(n)$    | $O(n)$   |
-| List           | $O(n)$  | $O(1)$    | $O(1)$   |
+| Data Structure              | Subtype / Implementation                               | Reading        | Insertion             | Deletion         | Note                                                                                                                                                                 |
+|-----------------------------|--------------------------------------------------------|----------------|-----------------------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Array](ds/linear/array)    | -                                                      | $O(1)$         | $O(n)$                | $O(n)$           | Allows random access.                                                                                                                                                |
+| List                        | [Linked list](ds/linear/linked-list)                   | $O(n)$         | $O(1)$                | $O(1)$           | Each node has a pointer to the next one.                                                                                                                             |
+| ^                           | [Doubly linked list](ds/linear/linked-list/doubly)     | ^              | ^                     | ^                | Each node has a pointer to the next and previous one.                                                                                                                |
+| ^                           | [Circular linked list](ds/linear/linked-list/circular) | ^              | ^                     | ^                | Head and tail are linked.                                                                                                                                            |
+| [Hash Table](ds/hash-table) | -                                                      | $O(1)$         | $O(1)$                | $O(1)$           | Assuming a good hash function is used and the table is not too full. In the worst case, where many collisions happen, time complexity can be $O(n)$.                 |
+| [Set](ds/set)               | Using hash tables.                                     | $O(1)          | $O(1)$                | $O(1)$           | The worst-case of some operations, such as finding the maximum or minimum element, can be O(n) if the implementation does not keep track of these values separately. |
+|                             | Using BST such as AVL, red-black, or splay tree.       | $O(log\ n)$    | $O(log\ n)$           | $O(log\ n)$      | ^                                                                                                                                                                    |
+| [Stack](ds/linear/stack)    | Using linked lists.                                    | $O(1)$ (Last)  | $O(1)$ (Push)         | $O(1)$ (Pop)     | The time complexity of the basic operations (LIFO) is constant, regardless of the number of elements.                                                                |
+|                             | Using fixed-size arrays.                               | $O(1)$ (Last)  | $O(n)$ (Push)         | $O(1)$ (Pop)     | Insertion may be proportional to the size of the Stack if an new array allocation is needed.                                                                         |
+| [Queue](ds/linear/queue)    | Using linked lists.                                    | $O(1)$ (First) | $O(1)$ (Enqueue)      | $O(1)$ (Dequeue) | The time complexity of the basic operations (FIFO) is constant, regardless of the number of elements.                                                                |
+|                             | [Priority Queue](ds/linear/queue/priority-queue)       | $O(1)$ (First) | $O(log\ n)$ (Enqueue) | $O(1)$ (Dequeue) | Using a Binary Heap, we can get the element with highest priority in $O(1)$ and insertions in $O(log\ n)$.                                                           |
 
 > This is only a high-level overview of base implementations. Usually, you'd be able to optimize data structures for specific use cases by making some assumptions and tweaks.
 
 ### Types
 
-- [Array](ds/linear/array)
-- [Hash Table](ds/hash-table)
-- [Linked List](ds/linear/linked-list)
-  - [Doubly Linked List](ds/linear/linked-list/doubly)
-  - [Circular Linked List](ds/linear/linked-list/circular)
-- [Set](ds/set)
-- [Stack](ds/linear/stack)
 - Tree
   - [Binary Search Tree](ds/trees/bst)
   - [Binary Tree](ds/trees/binary-tree)
@@ -53,8 +56,10 @@
   - [Red-Black Tree](ds/trees/red-black-tree)
   - [Rooted Trees](ds/trees)
   - [Van Emde Boas Trees](ds/trees/van-emde-boas)
-- [Queue](ds/linear/queue)
-  - [Priority Queue](ds/linear/queue/priority-queue)
+
+### Language-specific complexity
+
+- [JavaScript](languages/js/README.md)
 
 ## Algorithm Design
 
@@ -147,10 +152,6 @@
 - [Maximum subarray problem](problems/maximum-subarray-problem/README.md)
 - [Revenue Recognition](problems/revenue-recognition)
 - [Rod Cutting](problems/rod-cutting)
-
-## Language data structures complexity
-
-- [JavaScript](languages/js/README.md)
 
 ## Coding platforms
 

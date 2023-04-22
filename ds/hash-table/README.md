@@ -1,5 +1,27 @@
 # Hash Tables
 
+- [Hash Tables](#hash-tables)
+  - [Use cases](#use-cases)
+    - [Examples](#examples)
+  - [Explanation](#explanation)
+  - [Implementation](#implementation)
+    - [Direct-address table](#direct-address-table)
+    - [Array indexing](#array-indexing)
+    - [Direct-address Tables](#direct-address-tables)
+    - [Hash Function](#hash-function)
+      - [Heuristics example](#heuristics-example)
+      - [Division Method](#division-method)
+      - [Multiplication Method](#multiplication-method)
+    - [Universal Hashing](#universal-hashing)
+      - [Designing a universal class of hash fuctions](#designing-a-universal-class-of-hash-fuctions)
+    - [Types \& Collision Resolution](#types--collision-resolution)
+      - [Chaining](#chaining)
+      - [Open Addressing](#open-addressing)
+      - [Linear Probing](#linear-probing)
+      - [Quadratic Probing](#quadratic-probing)
+      - [Double hashing](#double-hashing)
+    - [Perfect Hashing](#perfect-hashing)
+
 ## Use cases
 
 Hash table is an effective data structure for __implementing dictionaries__ (insert, search, delete).

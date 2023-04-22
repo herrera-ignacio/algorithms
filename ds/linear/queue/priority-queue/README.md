@@ -1,10 +1,14 @@
 # Priority Queue
 
-* Overview
-* Applications
-* Common Procedures
-* Design & Implementation
-* Implementation Examples
+- [Priority Queue](#priority-queue)
+  - [Overview](#overview)
+  - [Applications](#applications)
+  - [Common Procedures](#common-procedures)
+  - [Design \& Implementation](#design--implementation)
+    - [Array Implementation](#array-implementation)
+    - [Heap Implementation](#heap-implementation)
+  - [Implementation Examples](#implementation-examples)
+    - [Java](#java)
 
 ## Overview
 
@@ -47,7 +51,7 @@
 
 * Better performanced compared to arrays or linked list.
 * With a *Binary Heap*, `getHighestPriority()` can be implemented in `O(1)` time, `insert` in `O(log n)` time and `deleteHighestPriority()` can also be implemented in `O(log n)` time (**most common implementation**).
-* With a *Fibonaci Heap*, `insert` and `getHighestPriority` can be implemented in `O(1)` amortized time and `deleteHighestPriority` in `O(log n)` amortzed time.
+* With a *Fibonaci Heap*, `insert` and `getHighestPriority` can be implemented in `O(1)` amortized time and `deleteHighestPriority` in `O(log n)` amortized time.
 
 ## Implementation Examples
 
