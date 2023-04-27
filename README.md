@@ -127,17 +127,17 @@
 
 ### [Sorting](sorting/README.md)
 
-| Algorithm                                | Time           | Space  | Stable |
-|------------------------------------------|----------------|--------|--------|
-| [Selection sort](sorting/selection_sort) | $O(n^2)$       | $O(1)$ | No     |
-| [Insertion sort](sorting/insertion_sort) | $O(n^2)$       | $O(1)$ | Yes    |
-| [Mergesort](sorting/mergesort)           |                |        |        |
-| [Heapsort](sorting/heapsort)             |                |        |        |
-| [Quicksort](sorting/quicksort)           | $O(n\ log\ n)$ | $O(log(n))$ | No |
-| [Counting sort](sorting/counting_sort)   |                |        |        |
-| [Radix sort](sorting/radix_sort)         |                |        |        |
-| [Bucket sort](sorting/bucket_sort)       |                |        |        |
-| [Randomly](sorting/randomly)             |                |        |        |
+| Algorithm                                | Time           | Space       | Stable |
+|------------------------------------------|----------------|-------------|--------|
+| [Selection sort](sorting/selection_sort) | $O(n^2)$       | $O(1)$      | No     |
+| [Insertion sort](sorting/insertion_sort) | $O(n^2)$       | $O(1)$      | Yes    |
+| [Mergesort](sorting/mergesort)           | $O(n\ log\ n)$ | $O(1)$      | Yes    |
+| [Heapsort](sorting/heapsort)             |                |             |        |
+| [Quicksort](sorting/quicksort)           | $O(n\ log\ n)$ | $O(log(n))$ | No     |
+| [Counting sort](sorting/counting_sort)   |                |             |        |
+| [Radix sort](sorting/radix_sort)         |                |             |        |
+| [Bucket sort](sorting/bucket_sort)       |                |             |        |
+| [Randomly](sorting/randomly)             |                |             |        |
 
 ## Solved problems
 
