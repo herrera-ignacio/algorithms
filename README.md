@@ -17,6 +17,7 @@
     - [Sorting](#sorting)
   - [Solved problems](#solved-problems)
     - [Well-known](#well-known)
+    - [Others](#others)
   - [Coding platforms](#coding-platforms)
     - [Leetcode](#leetcode)
 
@@ -152,6 +153,10 @@
 - [Maximum subarray problem](problems/maximum-subarray-problem/README.md)
 - [Revenue Recognition](problems/revenue-recognition)
 - [Rod Cutting](problems/rod-cutting)
+
+### Others
+
+- [Round-robin array of iterators](problems/others/round-robin-iterators/README.md)
 
 ## Coding platforms
 
