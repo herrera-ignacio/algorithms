@@ -86,6 +86,7 @@
 
 - [Breadth-first search](graph/bfs)
 - [Depth-first search](graph/dfs)
+- [Dijkstra's algorithm](graph/dijkstra)
 - Minimum Spanning Trees
   - Kruskal's algorithm
   - Prim's algorithm

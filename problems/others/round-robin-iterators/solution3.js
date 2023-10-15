@@ -13,6 +13,7 @@ class RoundRobinIterator {
 
   constructor(iterators) {
     this.iterators = iterators;
+    this.initItStates();
   }
 
   initItStates() {
@@ -31,24 +32,30 @@ class RoundRobinIterator {
       throw new Error("Iteration finished already");
     }
 
+    let curr = undefined;
     let found = false;
-    let allVisited = false;
     let i = (this._lastVisited + 1) % this.iterators.length;
 
-    while (!found && !allVisited) {
-      if (this._itStates[i])           
-
-      if (i === this.lastVisited) {
-        allVisited = true;
-      }
+    while (!found) {
+      if (!this._itStates[i].done) {
+        curr = this._itStates[i].value;
+        this._itStates[i] = this.iterators[i].next();
+        this._lastVisited = i;
+        found = true;
+      }         
 
       i = (i + 1) % this.iterators.length;
     }
 
+    return curr;
   }
 
   hasNext() {
-
+    if (this._hasNext) {
+      return true;
+    } else {
+      return Object.values(this._itStates).some(node => !node.done);
+    }
   }
 }
 

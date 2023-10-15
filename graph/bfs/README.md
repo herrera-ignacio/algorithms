@@ -91,7 +91,7 @@ BFS(G, s):
 for each vertex u in G.V - { s }
   u.color = WHITE
   u.distance = +infinity
-  u.pi = NIL
+  u.predecesor = NIL
 s.color = GRAY
 s.distance = 0
 s.predecessor = NIL
