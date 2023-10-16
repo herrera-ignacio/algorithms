@@ -9,13 +9,11 @@
 
 ## Overview
 
-A __greedy algorithm__ always makes the choice that looks best at the moment. That is, **it obtains an optimal solution to a problem by amking a sequence of locally optimal choices**. This **heuristic strategy** does not always produce an optimal solution.
+Greedy algorithms pick the _locally optimal solution_ at each step, and in the end you're left with the globally optimal solution.
 
-Greedy algorithms do not always yield optimal solutions, but for many problems they do.
+> This __heuristic strategy__ does not always produce an optimal solution but for many problems they do.
 
-Greedy algorithms **typically have a top-down design**; make a choice and then solve a subproblem, rather than the bottom-up technique of solving subproblems before making a choice.
-
-> For many optimization problems, using dynamic programming to determine the best choices is overkill, simpler, more efficient algorithms will do.
+They provide simple and straightforward solutions for many optimization problems as opposed to dynamic programming which might be overkill.
 
 ## Design Process
 
@@ -37,27 +35,27 @@ More generally, we design greedy algorithms acccording to the following sequence
 2. Prove that there is always an optimal solution to the original problem that amkes the greedy choice, so that the greedy choice is always safe.
 3. Demonstrate optimal substructure by showing that, having made the greedy choice, what remains is a subproblem with the property that if we combine an optimal solution to the subproblem with the greedy choice we have made, we arrive at an optimal solution to the original problem.
 
-> To demonstrate that a greedy algorithm will solve a particular optimization problem, the **greedy-choice property** and **optimal substrcture** are the two key ingredients.
+> To demonstrate that a greedy algorithm will solve a particular optimization problem, the __greedy-choice property__ and __optimal substrcture__ are the two key ingredients.
 
-### Greedy-choice Property
+### Greedy-choice (locally optimal)
 
-We can assemble a global optimal solution by making locally optimal (greedy) choices. We make the choice that looks best in the current problem, without considering results from subproblems. After we make whatever choice seems best at the moment, we then solve the subproblem that remains.
+We can assemble a global optimal solution by making locally optimal choices. We make the choice that looks best in the current problem, without considering results from sub-problems. After we make whatever choice seems best at the moment, we then solve the subproblem that remains.
 
-> In dynamic programming, we make a choice at each step, but the choice usually depends on the solution to subproblems. Consequently, we typically solve dynamic-programming problems in a bottom-up manner, progressing from smaller subproblems to larger subproblems (alternatively top down but memoizing, but even though the code works top down, we still must solve the subproblems before making a choice.).
+> In dynamic programming, we make a choice at each step, but the choice usually depends on the solution to sub-problems. Consequently, we typically solve dynamic-programming problems in a bottom-up manner, progressing from smaller sub-problems to larger sub-problems (alternatively top down but memoizing, but even though the code works top down, we still must solve the sub-problems before making a choice.).
 
 ### Optimal Substructure
 
-A problem exhibits *optimal substructure* if an optimal solution to the problem contains within it optimal solutions to subproblems. 
+A problem exhibits _optimal substructure_ if an optimal solution to the problem contains within it optimal solutions to sub-problems.
 
 > This property is a key ingredient of assessing the applicability of dynamic programming as well as greedy algorithms.
 
-This scheme implicitly uses induction on the subproblems to prove that making the greedy choice at every step produces an optimal solution.
+This scheme implicitly uses induction on the sub-problems to prove that making the greedy choice at every step produces an optimal solution.
 
-### Greedy vs Dynamic PRogramming
+### Greedy vs Dynamic Ppogramming
 
-> Unlike *dynamic programming*, which solves the subproblems before making the first choice, a *greedy algorithm* makes its first choice before solving any subproblems.
+> Unlike _dynamic programming_, which solves the sub-problems before making the first choice, a _greedy algorithm_ makes its first choice before solving any sub-problems.
 
-* Dynamic algorithms usually proceed bottom up, whereas a greedy strategy usually progresses in a top-down fashion, making one greedy choice after another, reducing each given problem instance into a smaller one.
+Dynamic algorithms usually proceed bottom up, whereas a greedy strategy usually progresses in a top-down fashion, making one greedy choice after another, reducing each given problem instance into a smaller one.
 
 ## Well-Known Problems
 

@@ -71,6 +71,7 @@
 - [Greedy Algorithms](glossary/greedy-algorithms)
 - [Probablisitic Analysis](glossary/probabilistic-analysis.md)
 - [Randomized Algorithm](glossary/randomized-algo.md)
+- [NP-complete problems](glossary/np-complete/README.md)
 
 ## Algorithms
 
@@ -147,6 +148,7 @@
 
 - [0-1 Knapsack](problems/0-1-knapsack)
 - [Activity Selection](problems/activity-selection)
+- [Classroom scheduling](problems/classroom-scheduling/README.md)
 - [Hiring Problem](problems/hiring)
 - [Huffman Codes](problems/huffman-codes)
 - [Longest common subsequence](problems/lcs)
@@ -154,6 +156,7 @@
 - [Maximum subarray problem](problems/maximum-subarray-problem/README.md)
 - [Revenue Recognition](problems/revenue-recognition)
 - [Rod Cutting](problems/rod-cutting)
+- [Set-covering problem](problems/set-covering/README.md)
 
 ### Others
 
