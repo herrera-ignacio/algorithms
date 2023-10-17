@@ -1,5 +1,16 @@
 # Longest common subsequence
 
+- [Longest common subsequence](#longest-common-subsequence)
+  - [Subsequence](#subsequence)
+  - [Common subsequence](#common-subsequence)
+  - [LCM problem](#lcm-problem)
+  - [Dynamic Programming Steps](#dynamic-programming-steps)
+    - [Step 1: Characterizing a LCS](#step-1-characterizing-a-lcs)
+      - [Theorem](#theorem)
+    - [Step 2: Recursive solution](#step-2-recursive-solution)
+    - [Step 3: Computing the length of an LCS](#step-3-computing-the-length-of-an-lcs)
+      - [Step 4: Constructing an LCS](#step-4-constructing-an-lcs)
+
 ## Subsequence
 
 Formally, given a sequence `X = <x1, x2, ..., xm>`, another sequence `Z = <z1, z2, ..., zk>` is a subsequence of `X` if there exists a strictly increasing sequence `<i1, i2, ..., ik>` of indices of `X` such that for all `j = 1...k`, we have `x_i_j = z_i_j`
@@ -44,7 +55,7 @@ c[i,j] = max(c[i, j-1], c[i-1, j])  // if i,j > 0 and xi != yj
 
 ### Step 3: Computing the length of an LCS
 
-Since the LCS has only _Theta(m*n)_ distinch subproblems, we can use dynamic programming to compute the solutions bottom up and achieve this complexity.
+Since the LCS has only _Theta(m*n)_ distinct sub-problems, we can use dynamic programming to compute the solutions bottom up and achieve this complexity.
 
 Procedure `LCS-LENGTH` takes two sequences as inputs (`X = <x1...xm>` and `Y = <y1...yn>`). It stores `c[i,j]` values in a __row-major__ order (first row of c from left to right, then second row, and so on). This procedure also maintains table `b[1..m, 1..n]` to help us construct an optimal solution by pointing to the table entry corresponding to the optimal subproblem solution chosen when computing `c[i,j]`. Finally, `c[m,n]` contains the length of an LCS of `X` and `Y`.
 

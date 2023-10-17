@@ -146,11 +146,12 @@
 
 ### Well-known
 
-- [0-1 Knapsack](problems/0-1-knapsack)
+- [Knapsack](problems/knapsack/README.md)
 - [Activity Selection](problems/activity-selection)
 - [Classroom scheduling](problems/classroom-scheduling/README.md)
 - [Hiring Problem](problems/hiring)
 - [Huffman Codes](problems/huffman-codes)
+- [Longest common substring](problems/longest-common-substring/README.md)
 - [Longest common subsequence](problems/lcs)
 - [Matrix Chain Multiplication](problems/matrix-chain-mult)
 - [Maximum subarray problem](problems/maximum-subarray-problem/README.md)
