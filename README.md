@@ -183,10 +183,12 @@
 - [222: Count complete tree nodes](problems/leetcode/222)
 - [223: Rectangle area](problems/leetcode/223)
 - [224: Basic calculator](problems/leetcode/224)
+- [231: Power of two](problems/leetcode/231)
 - [237: Delete node in a linked list](problems/leetcode/237)
 - [263: Ugly number](problems/leetcode/263)
 - [279: Perfect squares](problems/leetcode/279) - Trees - BFS
 - [283: Move Zeroes](problems/leetcode/283) - Easy - Array
+- [342: Power of four](problems/leetcode/342) - Easy - Array
 - [345: Reverse vowels of a string](problems/leetcode/345)
 - [374: Guess number higher or lower](problems/leetcode/374)
 - [380: Insert Delete GetRandom O(1)](problems/leetcode/380) - Hash Map + Array
