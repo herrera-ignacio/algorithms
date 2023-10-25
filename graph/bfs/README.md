@@ -19,7 +19,7 @@
 
 > Prim's minimum-spanning-tree algorithm and Dijkstra's single-source shortest-paths algorithm use ideas similar to those in BFS.
 
-The search radiates out from the starting point. You'll check first-degree connections before second-degree connections.
+It's also called __level order traversal__ : The search radiates out from the starting point. You'll check first-degree connections before second-degree connections.
 
 Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.
 
@@ -40,7 +40,7 @@ Moreover, BFS can be used to solve many problems in graph theory, for example:
 - [Cheney's algorithm (Tracing garbage collection)](https://en.wikipedia.org/wiki/Cheney%27s_algorithm)
 - Find the shortest path between two nodes.
 - Serialization/deserialization of a binary tree vs serialization in sorted order, allows the tree to be re-constructed in an efficient manner.
-- Testing bipartiteness of a graph.
+- Testing if a graph is bi-partite.
 - Parallel algorithms for computing a graph's transitive closure.
 
 ## Implementation
