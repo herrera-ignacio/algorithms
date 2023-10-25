@@ -40,7 +40,7 @@ Moreover, BFS can be used to solve many problems in graph theory, for example:
 - [Cheney's algorithm (Tracing garbage collection)](https://en.wikipedia.org/wiki/Cheney%27s_algorithm)
 - Find the shortest path between two nodes.
 - Serialization/deserialization of a binary tree vs serialization in sorted order, allows the tree to be re-constructed in an efficient manner.
-- Testing bipartiteness of a graph.
+- Testing if a graph is bi-partite.
 - Parallel algorithms for computing a graph's transitive closure.
 
 ## Implementation
