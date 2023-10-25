@@ -7,17 +7,19 @@ function dijkstra(graph, costs) {
   
   while(node !== undefined) {
     let cost = costs[node];
-    // Note that neighbors is a hash table that maps each neighbor to its cost
+    // Note that neighbors is a hash table that maps each neighbor to its known cost
+    // meaning, the cost from getting to that neighbor from this node.
+    // It's not the same as the cost to get to the neighbor from the starting point.
     let neighbors = graph[node];
 
     // Go through all the node's neighbors
     for (const n of Object.keys(neighbors)) {
       const newCost = cost + neighbors[n];
 
-      // If it's cheaper to get to this neighbor
-      // by going through this node
+      // Is it cheaper to get to this neighbor than the previously known cost from the starting point?
+      // If we didn't know this cost yet, we consider this new cost as the cheapest until now.
       if (newCost < costs[n]) {
-        // Update the cost
+        // This is the cheapest known path to get to the neighbor from the starting point.
         costs[n] = newCost;
         // This node becomes the "most optimal" parent for this neighbor
         parents[n] = node;
@@ -36,7 +38,7 @@ function dijkstra(graph, costs) {
 }
 
 /**
- * 
+ * Find the lowest cost node to apply dijkstra
  * @param {Object} costs 
  * @param {Set} processed 
  * @returns 
@@ -52,7 +54,7 @@ function findLowestCostNode(costs, processed) {
 
     const cost = costs[node];
 
-    if (cost < lowestCost) {
+    if (cost <= lowestCost) {
       lowestCostNode = node;
       lowestCost = cost;
     }
@@ -93,11 +95,10 @@ function printShortestPath(parents) {
 // Note that a given node maps to a hash table with its neighbors
 // and the cost it takes to travel to each of them.
 const graph = {};
-graph.start = {}; // start will have two neighbors -> its keys
-graph.start.a = 6; // 6 minutes to get to "a" from start
-graph.start.b = 2;
-graph.a = { "end": 1 }; // 1 neighbor
-graph.b = { "a": 3, "end": 5 }; // 2 neighbors
+// start has two neighbors:
+graph.start = { a: 6, b: 2 }; // 6 minutes to get to "a" from start, and 2 to "b"
+graph.a = { end: 1 }; // 
+graph.b = { a: 3, end: 5 }; // 2 neighbors
 graph.end = {}; // no neighbors
 
 // The cost is how long it takes to get to a node from the start
