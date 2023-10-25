@@ -199,6 +199,7 @@
 - [587: Erect the fence](problems/leetcode/587)
 - [645: Set mismatch](problems/leetcode/645)
 - [766: Toeplitz matrix](problems/leetcode/766)
+- [779: K-th symbol in grammer](problems/leetcode/779)
 - [899: Orderly queue](problems/leetcode/899)
 - [901: Stock plan](problems/leetcode/901) - Monotonic stack
 - [905: Sort array by parity](problems/leetcode/905) - Easy - Array
