@@ -1,46 +1,68 @@
 # Depth-first Search
 
-## Definition
+- [Depth-first Search](#depth-first-search)
+  - [Overview](#overview)
+  - [Pseudocode](#pseudocode)
+    - [Recursive](#recursive)
+    - [Iterative](#iterative)
+  - [Time \& space complexity](#time--space-complexity)
+  - [Non-termination](#non-termination)
+  - [Vertex ordering - Graph traversal](#vertex-ordering---graph-traversal)
 
-The strategy followed by DFS is, as its name implies, to search *deeper* in the graph whenever possible. DFS explores edges out of the most recently discovered vertex *v* that still has unexplored edges leaving it.
+## Overview
 
-Once all of *v*'s edges have been explored, the search *backtracks* to explore edges leaving the vertex from which *v* was discovered. This process continues until we have discovered all the vertices that are reachable from the original source vertex. If any undiscovered vertices remain, then DFS selects one of them as a new source, and it repeats the search from that source. The algorithm repeats this entire process until it has discovered every vertex.
+DFS traverses or searches tree or graph data structures. It starts at the root node (selecting some arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking.
 
-## Example Implementation
+> Extra memory, usually a stack, is needed to keep track of the nodes discovered so far along a specified branch which helps in backtracking.
 
-```
-DFS(G)
-for each vertex u in G.V
-  u.color = WHITE
-  u.predecesor = NIL
-time = 0
-for each vertex u in G.V
-  if u.color == WHITE
-    DFS-VISIT(G, u)
+![dfs](Depth-First-Search.gif)
 
-################
+## Pseudocode
 
-DFS-VISIT(G, u)
-time = time + 1 // white vertex u has just been discovered
-u.distance = time
-u.color = GRAY
-for each v in G.Adj[u] // explore edge(u, v)
-  if v.color == WHITE
-    v.predecesor = u
-    DFS-VISIT(G, v)
-u.color = BLACK
-time = time + 1
-u.f = time // timestamp for when the search finishes examining v's adjacency list (and blackens v)
+### Recursive
+
+```text
+DFS(G, v) is
+  label v as discovered
+  for all directed edges from v to w that are in G.adjacentEdges(v) do
+    if vertex w is not label as discovered then
+      DFS(G, w)
 ```
 
-![](2021-12-19-21-04-09.png)
+### Iterative
 
-## Properties
+```text
+DFS_iterative(G, v) is
+  let S be a stack
+  S.push(v)
+  while S is not empty do
+    v = S.pop()
+    if v is not labeled as discovered then
+      label v as discovered
+      for all edges from v to w in G.adjacentEdges(v) do
+        s.push(w)
+```
 
-![](2021-12-19-21-04-40.png)
+## Time & space complexity
 
-a. The result of a DFS of a *directed graph*. Vertices and Timestamps are indicated in the image.
+When traversing an entire graph, it takes time $O(|V| + |E|)$, where $|V|$ is the number of vertices and $|E|$ the number of edges. It also uses space $O(|V|)$ in the worst case to store the stack of vertices on the current search pat as well as the set of already-visited vertices.
 
-b. Intervals for the discovery time and finishing time of each vertex correspond to the parenthesization. Each rectangle spans the interval given by the discovery and finishing times of the corresponding vertex.
+Thus, time and space bounds are __the same as for BFS__ and the choice of which of these to use depends on the different properties of the vertex ordering the two produce.
 
-c. The graph of part (a) redrawn with all tree and forward edges going down within a depth-first tree and all black edges going up from a descendant to an ancestor.
+## Non-termination
+
+In specific domains, such as searching for solutions in AI or web-crawling, the graph to be traversed is often either too large to visit in its entirety or infinite. In such cases, search is only performed to a __limited depth__. Also, due to limited resources, one typically does not use data structures to keep track of the set of all previously visited vertices.
+
+When an appropriate depth limit is not known a priori, __iterative deepening depth-first search__ applies DFS repeatedly with a sequence of increasing limits.
+
+## Vertex ordering - Graph traversal
+
+DFS can be used to linearly order the vertices of a graph or tree.
+
+![traversal](image.png)
+
+- __preordering__: in the order that they were _first_ visited by DFS.
+- __postordering__: in the order that they were _last_ visited by DFS.
+- __inorder__: traverse the left subtree, then the root, and then the right subtree.
+- __reverse preordering__: in the opposite order of their first visit.
+- __reverse postordering__: in the opposite order of their last visit.

@@ -19,7 +19,7 @@
 
 > Prim's minimum-spanning-tree algorithm and Dijkstra's single-source shortest-paths algorithm use ideas similar to those in BFS.
 
-The search radiates out from the starting point. You'll check first-degree connections before second-degree connections.
+It's also called __level order traversal__ : The search radiates out from the starting point. You'll check first-degree connections before second-degree connections.
 
 Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.
 
