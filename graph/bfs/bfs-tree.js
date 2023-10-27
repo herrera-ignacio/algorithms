@@ -12,26 +12,21 @@
  */
 const bfs = (root) => {
   const queue = [];
-  const visited = new Map(); // needed if its a graph
 
   // Covers the case where tree is empty
   if (root) {
-    visited.set(root, true);
     queue.push(root);
   }
 
   while (queue.length > 0) {
-    const node = queue.pop();
-
+    const node = queue.shift();
     // do something with node if you want
     
-    if (node.left && !visited.has(node.left)) {
-      visited.set(node.left, true);
+    if (node.left) {
       queue.push(node.left);
     }
 
-    if (node.right && !visited.has(node.right)) {
-      visited.set(node.right, true);
+    if (node.right) {
       queue.push(node.right)
     }
   }

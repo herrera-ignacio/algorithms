@@ -13,6 +13,8 @@
 
 DFS traverses or searches tree or graph data structures. It starts at the root node (selecting some arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking.
 
+It allows to __find the shortest path from a start to a target node__ in _unweighted graphs_.
+
 > Extra memory, usually a stack, is needed to keep track of the nodes discovered so far along a specified branch which helps in backtracking.
 
 ![dfs](Depth-First-Search.gif)
