@@ -203,6 +203,7 @@
 - [645: Set mismatch](problems/leetcode/645)
 - [766: Toeplitz matrix](problems/leetcode/766)
 - [779: K-th symbol in grammer](problems/leetcode/779)
+- [823: Binary trees with factors](problems/leetcode/823) - Medium - Trees - Dynamic programming
 - [899: Orderly queue](problems/leetcode/899)
 - [901: Stock plan](problems/leetcode/901) - Monotonic stack
 - [905: Sort array by parity](problems/leetcode/905) - Easy - Array
