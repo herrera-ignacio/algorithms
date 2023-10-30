@@ -219,6 +219,7 @@
 - [1235: Maximum profit in job scheduling](problems/leetcode/1235) - Dynamic Programming + Binary Search
 - [1239: Maximum length of a concatenated string with unique characters](problems/leetcode/1239)
 - [1323: Maximum 69 number](problems/leetcode/1323)
+- [1356: Sort integers by the number of 1 bits](problems/leetcode/1356)
 - [1509: Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
 - [1544: Make the string great](problems/leetcode/1544)
 - [1706: Where will the ball fall](problems/leetcode/1706)
