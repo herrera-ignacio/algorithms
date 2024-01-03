@@ -227,6 +227,7 @@
 - [1832: Check if the sentence is pangram](problems/leetcode/1832)
 - [1926: Nearest exit from entrance in maze](problems/leetcode/1926)
 - [2095: Delete the middle node of a linked list](problems/leetcode/2095)
+- [2125: Number of laser beams in a bank](problems/leetcode/2125)
 - [2131: Longest palindrome by concatenating two letter words](problems/leetcode/2131)
 - [2225: Find players with zero or one losses](problems/leetcode/2225) - Map
 - [2610: Convert an array into a 2d array with conditions](problems/leetcode/2610) - Medium - Array
