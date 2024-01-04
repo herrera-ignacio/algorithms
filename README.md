@@ -231,3 +231,4 @@
 - [2131: Longest palindrome by concatenating two letter words](problems/leetcode/2131)
 - [2225: Find players with zero or one losses](problems/leetcode/2225) - Map
 - [2610: Convert an array into a 2d array with conditions](problems/leetcode/2610) - Medium - Array
+- [2870: Minimum number of operations to make array empty](problems/leetcode/2870)
