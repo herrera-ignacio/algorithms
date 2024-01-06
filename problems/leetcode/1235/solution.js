@@ -26,7 +26,7 @@ function findNextJob(startTime, lastEndingTime) {
 /**
  * 
  * @param {number[]} memo
- * @param {number[][]} jobs 
+ * @param {number[][]} jobs ([<startTime>, <endtime>, <profit>]) 
  * @param {number[]} startTime 
  * @param {number} n 
  * @param {number} position 
