@@ -214,6 +214,7 @@
 - [976: Largest perimeter triangle](problems/leetcode/976)
 - [977: Squares of a sorted array](problems/leetcode/977)
 - [1047: Remove all adjacent duplicates in a string](problems/leetcode/1047) - Stack
+- [1066: Campus bikes II](problems/leetcode/1066) - Matrix - Medium
 - [1089: Duplicate Zeros](problems/leetcode/1089) - Queue
 - [1198: Find smallest common element in all rows](problems/leetcode/1198) - Matrix
 - [1208: Unique number of occurrences](problems/leetcode/1208) - Set + Map
