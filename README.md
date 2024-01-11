@@ -220,6 +220,7 @@
 - [1089: Duplicate Zeros](problems/leetcode/1089) - Queue
 - [1198: Find smallest common element in all rows](problems/leetcode/1198) - Matrix
 - [1208: Unique number of occurrences](problems/leetcode/1208) - Set + Map
+- [1026: Maximum difference between node and ancestor](problems/leetcode/1026) - Medium - Tree
 - [1235: Maximum profit in job scheduling](problems/leetcode/1235) - Dynamic Programming + Binary Search
 - [1239: Maximum length of a concatenated string with unique characters](problems/leetcode/1239)
 - [1323: Maximum 69 number](problems/leetcode/1323)
