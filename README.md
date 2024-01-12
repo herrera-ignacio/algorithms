@@ -227,6 +227,7 @@
 - [1356: Sort integers by the number of 1 bits](problems/leetcode/1356)
 - [1509: Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
 - [1544: Make the string great](problems/leetcode/1544)
+- [1704: Determine if string halves are alike](problems/leetcode/1704)
 - [1706: Where will the ball fall](problems/leetcode/1706)
 - [1832: Check if the sentence is pangram](problems/leetcode/1832)
 - [1926: Nearest exit from entrance in maze](problems/leetcode/1926)
