@@ -172,6 +172,7 @@
 - [26: Remove duplicates from sorted array](problems/leetcode/26) - Easy - Array
 - [27: Remove element](problems/leetcode/27) - Easy - Array
 - [36: Valid sudoku](problems/leetcode/36) - Array / Matrix
+- [70: Climbing stairs](problems/leetcode/70) - Easy - Dynamic programming
 - [76: Minimum sindow substring](problems/leetcode/76)
 - [79: Word search](problems/leetcode/79)
 - [88: Merge sorted array](problems/leetcode/88) - Easy - Array
