@@ -211,6 +211,7 @@
 - [901: Stock plan](problems/leetcode/901) - Monotonic stack
 - [905: Sort array by parity](problems/leetcode/905) - Easy - Array
 - [907: Sum of subarray minimums](problems/leetcode/907) - Monotonic stack
+- [931: Minimum falling path sum](problems/leetcode/931) - Medium - Matrix + Dynamic programming
 - [938: Range sum of BST](problems/leetcode/938) - Easy - Tree
 - [941: Valid mountain array](problems/leetcode/941) - Easy - Array
 - [947 - Most stones removed with same row or column](problems/leetcode/947)
