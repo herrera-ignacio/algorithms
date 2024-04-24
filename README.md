@@ -32,7 +32,7 @@
 | ^                           | [Doubly linked list](ds/linear/linked-list/doubly)     | ^              | ^                     | ^                | Each node has a pointer to the next and previous one.                                                                                                                |
 | ^                           | [Circular linked list](ds/linear/linked-list/circular) | ^              | ^                     | ^                | Head and tail are linked.                                                                                                                                            |
 | [Hash Table](ds/hash-table) | -                                                      | $O(1)$         | $O(1)$                | $O(1)$           | Assuming a good hash function is used and the table is not too full. In the worst case, where many collisions happen, time complexity can be $O(n)$.                 |
-| [Set](ds/set)               | Using hash tables.                                     | $O(1)          | $O(1)$                | $O(1)$           | The worst-case of some operations, such as finding the maximum or minimum element, can be O(n) if the implementation does not keep track of these values separately. |
+| [Set](ds/set)               | Using hash tables.                                     | $O(1)$         | $O(1)$                | $O(1)$           | The worst-case of some operations, such as finding the maximum or minimum element, can be O(n) if the implementation does not keep track of these values separately. |
 |                             | Using BST such as AVL, red-black, or splay tree.       | $O(log\ n)$    | $O(log\ n)$           | $O(log\ n)$      | ^                                                                                                                                                                    |
 | [Stack](ds/linear/stack)    | Using linked lists.                                    | $O(1)$ (Last)  | $O(1)$ (Push)         | $O(1)$ (Pop)     | The time complexity of the basic operations (LIFO) is constant, regardless of the number of elements.                                                                |
 |                             | Using fixed-size arrays.                               | $O(1)$ (Last)  | $O(n)$ (Push)         | $O(1)$ (Pop)     | Insertion may be proportional to the size of the Stack if an new array allocation is needed.                                                                         |
@@ -217,6 +217,7 @@
 - [947 - Most stones removed with same row or column](problems/leetcode/947)
 - [976: Largest perimeter triangle](problems/leetcode/976)
 - [977: Squares of a sorted array](problems/leetcode/977)
+- [1137: N-th Tribonacci number](problems/leetcode/1137)
 - [1047: Remove all adjacent duplicates in a string](problems/leetcode/1047) - Stack
 - [1066: Campus bikes II](problems/leetcode/1066) - Matrix - Medium
 - [1089: Duplicate Zeros](problems/leetcode/1089) - Queue
