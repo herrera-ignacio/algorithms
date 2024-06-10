@@ -2,7 +2,7 @@
 
 Counting sort assumes that each of the n input elements is an integer in the range 0 to k, for some integer k.
 
-When k = O(n), the sort runs in Theta(n) time.
+When $k = O(n)$, the sort runs in $O(n)$ time.
 
 Counting sort determines, for each input element x, the number of element less than x. It uses this information to place element x directly into its position in the output array.
 

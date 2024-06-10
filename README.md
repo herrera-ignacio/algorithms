@@ -119,27 +119,29 @@
 - [Sliding Window Log](rate-limiting/sliding-window-log)
 - [Sliding Window Counter](rate-limiting/sliding-window-counter)
 
-### Searching
+### Searching and traversal
 
-> [What is Tree Traversal?](ds/trees/traversal/README.md)
+> [What is a Tree Traversal?](ds/trees/traversal/README.md)
 
-- [DFS: Depth-first Search $O(|V| + |E|)$](ds/trees/traversal/dfs/README.md)
-- [BFS: Breadth-first Search $O(|V| + |E|)$](graph/bfs/README.md)
-- [Binary search $O(log_2\ n)$](searching/binary-search/README.md)
+| Algorithm                                                   | Time             | Space  | Notes |
+|-------------------------------------------------------------|------------------|--------|-------|
+| [DFS: Depth-first search](ds/trees/traversal/dfs/README.md) | $O(\|V\|+\|E\|)$ | $O(1)$ |       |
+| [BFS: Breadth-first search](graph/bfs/README.md)            | $O(\|V\|+\|E\|)$ | $O(1)$ |       |
+| [Binary search](searching/binary-search/README.md)          | $O(log_2 n)$     | $O(1)$ |       |
 
 ### [Sorting](sorting/README.md)
 
-| Algorithm                                | Time           | Space       | Stable |
-|------------------------------------------|----------------|-------------|--------|
-| [Selection sort](sorting/selection_sort) | $O(n^2)$       | $O(1)$      | No     |
-| [Insertion sort](sorting/insertion_sort) | $O(n^2)$       | $O(1)$      | Yes    |
-| [Mergesort](sorting/mergesort)           | $O(n\ log\ n)$ | $O(1)$      | Yes    |
-| [Heapsort](sorting/heapsort)             |                |             |        |
-| [Quicksort](sorting/quicksort)           | $O(n\ log\ n)$ | $O(log(n))$ | No     |
-| [Counting sort](sorting/counting_sort)   |                |             |        |
-| [Radix sort](sorting/radix_sort)         |                |             |        |
-| [Bucket sort](sorting/bucket_sort)       |                |             |        |
-| [Randomly](sorting/randomly)             |                |             |        |
+| Algorithm                                | Time                                      | Space       | Stable                                                       |                                                                                                  |
+|------------------------------------------|-------------------------------------------|-------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| [Selection sort](sorting/selection_sort) | $O(n^2)$                                  | $O(1)$      | No                                                           |                                                                                                  |
+| [Insertion sort](sorting/insertion_sort) | $O(n^2)$                                  | $O(1)$      | Yes                                                          |                                                                                                  |
+| [Mergesort](sorting/mergesort)           | $O(n\ log\ n)$                            | $O(1)$      | Yes                                                          |                                                                                                  |
+| [Heapsort](sorting/heapsort)             | $O(n\ log\ n)$                            | $O(1)$      | No                                                           |                                                                                                  |
+| [Quicksort](sorting/quicksort)           | $O(n^2)$ worst and $O(n\ log\ n)$ average | $O(log(n))$ | No                                                           |                                                                                                  |
+| [Counting sort](sorting/counting_sort)   | $O(n)$                                    | $O(k)$      | No                                                           | Where $k$ is the largest element in the array                                                    |
+| [Radix sort](sorting/radix_sort)         | $O(d*(n+k)$                               | $O(n+k)$    | Yes                                                          | Where $d$ is the number of digits in the longest number and $k$ the base (e.g., 10 for decimals) |
+| [Bucket sort](sorting/bucket_sort)       | $O(n^2)$ worst and $O(n+k)$ average       | $O(n+k)$    | Yes (if stable sorting algorithm is used within the buckets) | Where $k$ is the number of buckets.                                                              |
+| [Random permutations](sorting/randomly)  | -                                         | -           | -                                                            | Complexities will depend on whether it uses some sort of priority and comparison sort or not.    |
 
 ## Solved problems
 
@@ -220,7 +222,7 @@
 - [1509: Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
 - [1544: Make the string great](problems/leetcode/1544)
 - [1706: Where will the ball fall](problems/leetcode/1706)
-- [1832: Check if the sentence is pangram](problems/leetcode/1832)
+- [1832: Check if the sentence is anagram](problems/leetcode/1832)
 - [1926: Nearest exit from entrance in maze](problems/leetcode/1926)
 - [2095: Delete the middle node of a linked list](problems/leetcode/2095)
 - [2225: Find players with zero or one losses](problems/leetcode/2225) - Map
