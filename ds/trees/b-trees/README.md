@@ -14,16 +14,18 @@
 
 ## Overview
 
-*B-trees* are **balanced search trees** designed to work well on disks or other direct-access secondary stovage devices. B-trees are similar to *red-black trees*, but they are better at **minimizing disk I/O operations**. Many database systems use B-trees, or variants of it, to store information.
+*B-trees* are **self-balancing tree data structures** that maintain sorted data and 
+are optimized for disk storage systems and databases where large amounts of data
+need to be stored and accessed efficiently 
+
+B-trees are similar to *red-black trees*, but they are better at **minimizing disk I/O operations**. 
+Many database systems use B-trees, or variants of it, to store information.
 
 ![](2021-08-07-23-35-20.png)
-> A B-tree whose keys are the consonants of English. An internal node `x` containing `x.n` keys has `x.n + 1` children. All leaves are at the same depth in the tree. The lightly shaded nodes are examined in a search for the letter R.
 
-* B-trees differ from red-black trees in that B-tree **nodes may have many children**. That is, the *"branching factor"* of a B-tree can be quite large, although it usually depends on characteristics of the disk unit tested.
-
-* B-trees are similar to red-black trees in that **every n-node B-tree has height $O(lg n)$**. Therefore, we can also use B-trees to implement many dynamic-set operations in time $O(lg n)$.
-
-* The keys in node `x` serve as diving points separating the range of keys handled by `x` into `x.n + 1` subranges, each handled by one child of `x`. When searching for a key in a B-tree, we make an `(x.n + 1)`-way decision based on comparisons with the `x.n` keys stored at node `x`.
+> A B-tree whose keys are the consonants of English. 
+> An internal node `x` containing `x.n` keys has `x.n + 1` children.
+> All leaves are at the same depth in the tree. The lightly shaded nodes are examined in a search for the letter R.
 
 ## Definition
 
@@ -33,7 +35,7 @@ A *B-tree* `T` is a rooted tree (whose root is `T.root`) having the following pr
 
 1. Every node `x` has the following attributes:
    1. `x.n`, the number of keys currently stored in node `x`.
-   2. the `x.n` keys themselves, stored in nondecreasing order, so that $x.key_1 \leq x.key_n \leq ... \leq x.key_{x.n}$
+   2. the `x.n` keys themselves, stored in non-decreasing order, so that $x.key_1 \leq x.key_n \leq ... \leq x.key_{x.n}$
    3. `x.leaf`, a boolean value that is `TRUE` only if `x` is a leaf.
 
 2. Each internal node `x` also contains `x.n + 1` pointers $x.c_1, x.c_2, ..., x.c_{x.n+1}$ to its children.
@@ -48,6 +50,18 @@ A *B-tree* `T` is a rooted tree (whose root is `T.root`) having the following pr
 
 The simplest B-tree occurs when $t = 2$. Every internal node has either 2, 3 or 4 children, and we have a **2-3-4 tree**. In practice, however,much larger values of $t$ yield B-trees with smaller height.
 
+## Comparison with Red-Black Trees
+
+* B-trees **nodes may have many children**. That is, the *"branching factor"* of a B-tree can be quite large,
+  although it usually depends on characteristics of the disk unit tested.
+
+* B-trees are similar to red-black trees in that **every n-node B-tree has height $O(lg n)$**.
+  Therefore, we can also use B-trees to implement many dynamic-set operations in time $O(lg n)$.
+
+* The keys in node `x` serve as diving points separating the range of keys handled by `x` into `x.n + 1` sub ranges,
+  each handled by one child of `x`. When searching for a key in a B-tree, we make an `(x.n + 1)`-way decision based on
+  comparisons with the `x.n` keys stored at node `x`.
+
 ## The height of a B-tree
 
 The number of disk accesses required for most operations on a B-tree is proportional to the height of the B-tree.
@@ -60,7 +74,7 @@ $h \leq log_t \frac{n+1}{2}$
 
 ## Basic Operations
 
-The procedures are all "one-pass" algorithms that proceed downward from the root of the tree, withoug having to back up.
+The procedures are all "one-pass" algorithms that proceed downward from the root of the tree, without having to back up.
 
 In these procedures, we adopt **two conventions**:
 
@@ -70,9 +84,13 @@ In these procedures, we adopt **two conventions**:
 
 ### Search $O(log_t n)$
 
-Searching a B-tree is much like searching a BST, except that instead of making a binary, or "two-say", branchind decision at each node, we make a **multiway branching decision** according to the number of the node's children. More precisely, at each internal node $x$, we make an $(x.n + 1)$-way branching decision.
+Searching a B-tree is much like searching a BST, except that instead of making a binary, or "two-way", branching
+decision at each node, we make a **multiway branching decision** according to the number of the node's children.
+More precisely, at each internal node $x$, we make an $(x.n + 1)$-way branching decision.
 
-The top-level call is of the form `B-TREE-SEARCH(T.root, k)`. If `k` is in the B-tree, `B-TREE-SEARCH` returns the ordered pair `(y,i)` consisting of a node `y` and an index `i` such that $y.key_i = k$. Otherwise, the procedure returns `NIL`.
+The top-level call is of the form `B-TREE-SEARCH(T.root, k)`.
+If `k` is in the B-tree, `B-TREE-SEARCH` returns the ordered pair `(y,i)` consisting of a node `y` and an index `i`
+such that $y.key_i = k$. Otherwise, the procedure returns `NIL`.
 
 ```
 B-TREE-SEARCH(x, k) {

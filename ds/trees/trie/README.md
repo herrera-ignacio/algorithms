@@ -4,7 +4,7 @@
 
 ## Overview
 
-Trie (pronunced "try") or _prefix tree_ is a data structure used for __retrieval of a key in a dataset of strings__.
+Trie (pronounced "try") or _prefix tree_ is a data structure used for __retrieval of a key in a dataset of strings__.
 
 * [JavaScript Trie demo](trie.js)
 
@@ -60,7 +60,7 @@ Trie is a _rooted tree_ and its nodes have the following fields:
 
 ![](2022-11-05-20-39-48.png)
 
-> Repsentation of a key "leet" in trie.
+> Representation of a key "leet" in trie.
 
 ## Insertion
 
@@ -73,7 +73,7 @@ We insert a key by searching into the trie. We start from the root and search a 
 
 > Insertion of keys into a trie.
 
-### Complexity analysis
+### Insertion - Complexity analysis
 
 > $m$ is the key length.
 
@@ -97,7 +97,7 @@ Each key is represented as a path from the root to an internal node or leaf. We 
 
 > Search for "leet" in trie.
 
-### Complexity analysis
+### Search - Complexity analysis
 
 * Time complexity: $O(m)$.
 * Space complexity: $O(1)$.

@@ -1,6 +1,21 @@
 # Interval Trees
 
-Augmented RBT to support operations on dynamic sets of intervals. Each element `x` contains an interval `x.int`. In addition to the intervals themselves, each node `x` contains a value `x.max`, which is the maximum value of any interval endpoint stored in the subtree rooted at x. 
+<!-- TOC -->
+* [Interval Trees](#interval-trees)
+  * [Definition](#definition)
+  * [Usage example](#usage-example)
+  * [Representation](#representation)
+  * [Operations](#operations)
+    * [Implementations](#implementations)
+<!-- TOC -->
+
+## Definition
+
+Interval trees are a specialized data structure designed to efficiently store and query intervals or segments
+along a linear axis, typically a one-dimensional line. 
+The primary purpose of interval trees is to efficiently answer queries related to overlapping or intersecting intervals.
+
+Each element `x` contains an interval `x.int`. In addition to the intervals themselves, each node `x` contains a value `x.max`, which is the maximum value of any interval endpoint stored in the subtree rooted at x. 
 
 A __closed interval__ is an ordered pair of real numbers `[t1, t2]`, with `t1 <= t2`. The interval represents the set `{t in R: t1 <= t <= t2}`.
 
@@ -22,7 +37,7 @@ We can represent an interval `[t1, t2]`, as an object `i`, with attributes `i.lo
 
 * `INTERVAL-INSERT(T,x)` (`O(lg n)`) adds the element `x`, whose `int` attribute is assumed to contain an interval, to the interval tree `T`.
 
-* `INTERVAL-DELETE(T,x)` remvoes the element `x` from the interval tree `T`.
+* `INTERVAL-DELETE(T,x)` removes the element `x` from the interval tree `T`.
 
 * `INTERVAL-SEARCH(T,i)` returns a pointer to an element `x` in the interval tree `T` such that `x.int` overlaps interval `i`, or a pointer to the sentinel `T.nil` if no such element is in the set.
 

@@ -1,6 +1,22 @@
 # Order Statistic Tree
 
-An __order-statistic tree__ T is simply a red-black tree with additional information stored in each node. Besides the usual red-black tree attributes `x.key`, `x.color`, `x.p`, `x.left`, and `x.right` in a node `x`, we have another attribute, `x.size`. This attributes contains the number of (internal) nodes in the subtree rooted at `x` (including `x` itself), that is, __the size of the subtree__. This data structure supports __fast order-statistic operations__.
+<!-- TOC -->
+* [Order Statistic Tree](#order-statistic-tree)
+  * [Overview](#overview)
+  * [ith smallest key](#ith-smallest-key)
+  * [Determining the rank of an element](#determining-the-rank-of-an-element)
+  * [Maintaining subtree sizes](#maintaining-subtree-sizes)
+    * [Insertion](#insertion)
+    * [Deletion](#deletion)
+<!-- TOC -->
+
+## Overview
+
+An __order-statistic tree__ T is simply a red-black tree with additional information stored in each node.
+Besides the usual red-black tree attributes `x.key`, `x.color`, `x.p`, `x.left`, and `x.right` in a node `x`,
+we have another attribute, `x.size`. 
+This attributes contains the number of (internal) nodes in the subtree rooted at `x` (including `x` itself), 
+that is, __the size of the subtree__. This data structure supports __fast order-statistic operations__.
 
 ```
 x.size = x.left.size + x.right.size + 1
@@ -35,18 +51,30 @@ OS-RANK(T, x)
 
 ## Maintaining subtree sizes
 
-Given the `size` attribute in each node, `OS-SELECT` and `OS-RANK` can quickly compute order-statistic information. But we need efficient maintainance of these attributes within the basic modifying operations on red-black trees.
+Given the `size` attribute in each node, `OS-SELECT` and `OS-RANK` can quickly compute
+order-statistic information. But we need efficient maintenance of these attributes within the
+basic modifying operations on red-black trees.
 
 ### Insertion
 
-If we insert a new node as a child of an existing node, we simply increment `x.size` for each node `x` on the simple path traversed from the root down toward the leaves. The new node added gets a size of 1. Since there are `O(lg n)` nodes on the traversed path, the additional cost of maintaining the `size` attributes is `O(lg n)`.
+If we insert a new node as a child of an existing node, we simply increment `x.size` for each node 
+`x` on the simple path traversed from the root down toward the leaves.
+The new node added gets a size of 1. Since there are `O(lg n)` nodes on the traversed path, 
+the additional cost of maintaining the `size` attributes is `O(lg n)`.
 
-If we change colors and perform rotations to maintain the RBT properties, the only structural changes to the underlying RBT are caused by rotations, of which there are at most two. Moreover, a rotation is a locel operation, only two nodes have their size attributes invalidates, so we spend only `O(1)` additional time updating `size` attributes in the second phase.
+If we change colors and perform rotations to maintain the RBT properties,
+the only structural changes to the underlying RBT are caused by rotations,
+of which there are at most two. Moreover, a rotation is a local operation,
+only two nodes have their size attributes invalidates, so we spend only `O(1)`
+additional time updating `size` attributes in the second phase.
 
 ### Deletion
 
 Deletion from RBT consists of two phases.
 
-The first phase operates on the underlying search tree, either removes one node `y` from the tree or moves upward it within the tree. We simply traverse a simple path from node `y` up to the root, decrementing the `size` attributre of each node on the path. Since this path has length `O(lg n)`, the additional time spent is `O(lg n)`.
+The first phase operates on the underlying search tree, either removes one node `y` from the tree
+or moves upward it within the tree. We simply traverse a simple path from node `y` up to the root, 
+decrementing the `size` attribute of each node on the path.
+Since this path has length `O(lg n)`, the additional time spent is `O(lg n)`.
 
 The second phase, which performs three rotations at most, are handled in the same manner as for insertion.

@@ -23,5 +23,5 @@
 
 - Search (`indexOf` / `includes`): $O(n)$
 - Insert (`push`): amortized $O(1)$, sometimes $O(n)$ if resizing of internal ds is required.
-- Preappend (`unshift`): $O(n)$, since it requires reassigning all the indexes.
+- Pre-append (`unshift`): $O(n)$, since it requires reassigning all the indexes.
 - Delete (`pop`): amortized $O(1)$, or $O(n)$ if resizing of internal ds is required (e.g., `slice`).

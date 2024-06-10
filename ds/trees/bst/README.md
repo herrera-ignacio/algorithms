@@ -1,10 +1,33 @@
 # Binary Search Tree
 
+<!-- TOC -->
+* [Binary Search Tree](#binary-search-tree)
+  * [Overview](#overview)
+  * [BST Property](#bst-property)
+  * [Algorithms](#algorithms)
+    * [Inorder tree walk](#inorder-tree-walk)
+    * [Preorder tree walk](#preorder-tree-walk)
+    * [Postorder tree walk](#postorder-tree-walk)
+    * [Searching](#searching)
+    * [Max & Min](#max--min)
+    * [Successor & Predecessor | O(h)](#successor--predecessor--oh)
+      * [Important Child Property](#important-child-property)
+    * [Insertion | O(h)](#insertion--oh)
+    * [Deletion](#deletion)
+  * [Randomly built BST](#randomly-built-bst)
+<!-- TOC -->
+
+## Overview
+
 ![](2021-08-07-00-46-09.png)
 
 A BST is organized in a __binary tree__. We can represent such a tree by a linked data structure in which each node is an object. In addition to a _key_ and satellite data, each node contains attributes `left`, `right` and `p` that point to the nodes corresponding. If a child or the parent is missing, the appropriate attribute contains the value `NIL`.
 
-Basic operations on a BST take time proportional to the height of the tree. For a complete BST with `n` nodes, such operations run in `Theta(lg n)` __worst-case time__. If the tree is a linear chain of `n` nodes, however, the same operations take `Theta(n)` rost-case time. Luckly, the expected height of a randomly built BST is O(lg n), so basic dynamic-set operations on such a tree take `Theta(lg n)` time on __average__.
+Basic operations on a BST take time proportional to the height of the tree.
+For a complete BST with `n` nodes, such operations run in $O(lg n)$ __worst-case time__. 
+If the tree is a linear chain of `n` nodes, however, the same operations take $O(n) worst-case time. 
+Luckily, the expected height of a randomly built BST is $O(lg n)$, so basic dynamic-set operations on such a tree take $O(lg n)$
+time on __average__.
 
 ## BST Property
 
@@ -68,7 +91,7 @@ TREE-MAXIMUM(x)
     return x
 ```
 
-### Successor & Predecessor | O(h)
+### Successor & Predecessor ($O(h)$)
 
 Given a node in a BST, sometimes we need to find its successor in the sorted order determined by an inorder tree walk.
 
@@ -91,9 +114,10 @@ We break the code into two cases. If the right subtree of node x is nonempty, th
 
 If a node in a BST has two children, then its successor has no left child and its predecessor has no right child.
 
-### Insertion | O(h)
+### Insertion ($O(h)$)
 
-This procedure takes a node `z` for which `z.key = v` and `z.left = z.right = NIL`. It inserts `z` into an appropriate position in the tree.
+This procedure takes a node `z` for which `z.key = v` and `z.left = z.right = NIL`. It inserts `z` into an appropriate
+position in the tree.
 
 ```
 TREE-INSERT(T, z)

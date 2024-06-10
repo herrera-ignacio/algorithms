@@ -1,17 +1,20 @@
 # Binary Heap
 
-* Overview
-* Applications
-* Height
-* Types & Heap Property
-  * Max Heap
-  * Min Heap
-* Procedures
-  * Get Relative Index
-  * Traveral
-  * Maintaining the Heap Property
-  * Building a Heap
-  * Others
+<!-- TOC -->
+* [Binary Heap](#binary-heap)
+  * [Overview](#overview)
+  * [Applications](#applications)
+  * [Height](#height)
+  * [Types & Heap Property](#types--heap-property)
+    * [Max Heap](#max-heap)
+    * [Min Heap](#min-heap)
+  * [Procedures](#procedures)
+    * [Get Relative Index](#get-relative-index)
+    * [Traversal](#traversal)
+    * [Maintaining the heap property](#maintaining-the-heap-property)
+    * [Building a heap](#building-a-heap)
+    * [Other Procedures](#other-procedures)
+<!-- TOC -->
 
 > * [Java examples](https://github.com/herrera-ignacio/datastructures-in-java/tree/master/src/main/java/trees/heaps)  
 
@@ -21,11 +24,13 @@ The *Binary Heap* is a *Binary Tree* with the following properties:
 
 * It is a *Complete Tree*. This property makes Heap suitable to be stored in an array.
 
-> In a *Complete Tree*, all levels are completely filled except possibly for the last level and the last level has all keys as left as possible.
+> In a *Complete Tree*, all levels are completely filled except possibly for the last level, 
+> and the last level has all keys as left as possible.
 
 * It is either *Min Heap* or *Max Heap*, the same property must be recursively true for all nodes in the tree.
 
-> In a Min Binary Heap, the key at root must be minimumn among all keys present in the Binary Heap. Max Binary Heap is the opposite.
+> In a Min Binary Heap, the key at root must be minimum among all keys present in the Binary Heap.
+> Max Binary Heap is the opposite.
 
 ```
             10                      10
@@ -82,7 +87,7 @@ A[PARENT(i)] <= A[i]
 
 The smallest element in a min-heap is at the root.
 
-## Procedures
+## Operations
 
 * _MAX-HEAPIFY_ procedure, which runs in O(lg n) time, is the key to maintaining the max-heap property.
 
@@ -97,6 +102,15 @@ PARENT(i): return Floor(i/2)
 LEFT(i): return 2i
 RIGHT(i): return 2i + 1
 ```
+
+### Time complexity
+
+- Insertion: $O(log n)$
+- Deletion (remove-min or remove-max): $O(log n)$
+- Peek (find-min or find-max): $O(1)$
+- Extract-min or extract-max: $O(log n)$
+- Decrease-key or increase-key: $O(log n)$
+- Build heap: $O(n)$
 
 ### Traversal
 
@@ -124,7 +138,7 @@ This takes __O(lg n)__ time.
 
 ### Building a heap
 
-We can use the MAX-HAPIFY procedure in a bottom-up manner to convert an array A[1..n], into a max-heap.
+We can use the MAX-HEAPIFY procedure in a bottom-up manner to convert an array A[1..n], into a max-heap.
 
 The elements in the subarray A[(n/2 + 1)..n] are all leaves of the tree, and so each is a 1-element heap to begin with. The procedure BUILD-MAX-HEAP goes through the remaining nodes of the tree and runs MAX-HEAPIFY on each one.
 
