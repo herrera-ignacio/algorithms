@@ -24,10 +24,10 @@ The former type of graph is called an _undirected graph_ while the latter type o
 
 ## Representation
 
-There are two standard ways to represent a graph $G = (V, E)$, either directed or unidirected:
+There are two standard ways to represent a graph $G = (V, E)$, either directed or undirected:
 
-1. Collection of adjancency lists.
-2. Adjancency matrix.
+1. Collection of adjacency lists.
+2. Adjacency matrix.
 
 Because _adjacency-list_ representation provides a compact way to represent **sparse** graphs - those for which $|E|$ is much less than $|V|^2$ - it is usually the method of choice.
 

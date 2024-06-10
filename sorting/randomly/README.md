@@ -13,11 +13,11 @@ PERMUTE-BY-SORTING(A):
   sort A, using P as sort keys
 ```
 
-If we use a comparison sort, sorting takes Omega(n lg n) time.
+If we use a comparison sort, sorting takes $O(n lg n)$ time.
 
 ## Method 2
 
-We can permute the given array in place, in O(n) time. In its ith iteration, it chooses the element A[i] randomly from among elements A[i] through A[n].
+We can permute the given array in place, in $O(n)$ time. In its ith iteration, it chooses the element A[i] randomly from among elements A[i] through A[n].
 
 ```
 RANDOMIZE-IN-PLACE(A)

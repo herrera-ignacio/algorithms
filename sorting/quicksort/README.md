@@ -20,10 +20,10 @@ Moreover, Quicksort has a __smaller constant than merge sort__. So if they're bo
 
 ## Complexity
 
-|       | Worst | Best | Average |
-|-------|-------|------|---------|
-| Time  | $O(n^2)$ |      |         |
-| Space | $O(1)$ | $O(1)$ | $O(1)$ |
+|       | Worst    | Best         | Average      |
+|-------|----------|--------------|--------------|
+| Time  | $O(n^2)$ | $O(n log n)$ | $O(n log n)$ |
+| Space | $O(1)$   | $O(1)$       | $O(1)$       |
 
 > Tweaks in implementation might optimize the algorithm for specific use cases.
 

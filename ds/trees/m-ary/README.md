@@ -10,7 +10,8 @@
 
 ## Overview
 
-In *graph theory*, an *M-ary tree* (also known as *K-ary* or *K-way* tree) is a rooted tree in which each node has no more than $m$ children.
+In *graph theory*, an *M-ary tree* (also known as *K-ary* or *K-way* tree) is a rooted tree 
+in which each node has no more than $m$ children.
 
 ![](2021-07-09-22-02-38.png)
 
@@ -23,6 +24,15 @@ In *graph theory*, an *M-ary tree* (also known as *K-ary* or *K-way* tree) is a 
 * **Complete**: Every level, *except possible the last* is completely filled, and all nodes in the last level are as far left as possible. It is maximally space efficient.
 
 * **Perfect**: Full m-ary tree in which all *leaf nodes* are at the same depth.
+
+## Common usages
+
+- File systems.
+- Database indexing (particularly B-trees, a type of M-ary tree).
+- Routing tables.
+- Prefix trees (also known as Tries).
+- Symbol tables.
+- Compression algorithms.
 
 ## Design & Implementation
 

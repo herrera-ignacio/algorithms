@@ -16,7 +16,7 @@
 
 ## Overview
 
-In _DFS_ the search tree is deepened as much as possible before going to the next sibiling.
+In _DFS_ the search tree is deepened as much as possible before going to the next sibling.
 
 > Depth-first search is easily implemented via a stack, including recursively (via the call stack).
 

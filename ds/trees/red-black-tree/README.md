@@ -1,6 +1,9 @@
 # Red-Black Trees
 
-Red-black trees are one of many __search-tree schemes__ that are "__balanced__" in order to guarantee that basic dynamic-set-operationes take `O(lg n)` time in the worst-case.
+## Overview
+
+Red-black trees are one of many __search-tree schemes__ that are "__balanced__" 
+in order to guarantee that basic dynamic-set-operations take `O(lg n)` time in the worst-case.
 
 ![RBT](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Red-black_tree_example.svg/500px-Red-black_tree_example.svg.png)
 
