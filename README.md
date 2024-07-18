@@ -170,14 +170,14 @@
 
 - [X - Height Checker](problems/leetcode/x/height-checker)
 - [12: Integer to roman](problems/leetcode/12)
-- [21: Merge Two Sorted Lists](problems/leetcode/21) - Easy - Array
-- [26: Remove duplicates from sorted array](problems/leetcode/26) - Easy - Array
-- [27: Remove element](problems/leetcode/27) - Easy - Array
-- [36: Valid sudoku](problems/leetcode/36) - Array / Matrix
-- [70: Climbing stairs](problems/leetcode/70) - Easy - Dynamic programming
-- [76: Minimum sindow substring](problems/leetcode/76)
+- [21: Merge Two Sorted Lists](problems/leetcode/21)
+- [26: Remove duplicates from sorted array](problems/leetcode/26)
+- [27: Remove element](problems/leetcode/27)
+- [36: Valid sudoku](problems/leetcode/36)
+- [70: Climbing stairs](problems/leetcode/70)
+- [76: Minimum window substring](problems/leetcode/76)
 - [79: Word search](problems/leetcode/79)
-- [88: Merge sorted array](problems/leetcode/88) - Easy - Array
+- [88: Merge sorted array](problems/leetcode/88)
 - [112: Path sum](problems/leetcode/112)
 - [151: Reverse words in a string](problems/leetcode/151)
 - [208 Implement Trie (Prefix Tree)](problems/leetcode/208)
@@ -189,44 +189,44 @@
 - [231: Power of two](problems/leetcode/231)
 - [237: Delete node in a linked list](problems/leetcode/237)
 - [263: Ugly number](problems/leetcode/263)
-- [279: Perfect squares](problems/leetcode/279) - Trees - BFS
-- [283: Move Zeroes](problems/leetcode/283) - Easy - Array
-- [342: Power of four](problems/leetcode/342) - Easy - Array
+- [279: Perfect squares](problems/leetcode/279)
+- [283: Move Zeroes](problems/leetcode/283)
+- [342: Power of four](problems/leetcode/342)
 - [345: Reverse vowels of a string](problems/leetcode/345)
 - [374: Guess number higher or lower](problems/leetcode/374)
-- [380: Insert Delete GetRandom O(1)](problems/leetcode/380) - Hash Map + Array
-- [414: Third maximum number](problems/leetcode/414) - Easy - Array
+- [380: Insert Delete GetRandom O(1)](problems/leetcode/380)
+- [414: Third maximum number](problems/leetcode/414)
 - [433: Minimum genetic mutation](problems/leetcode/433)
-- [448: Find all numbers disappeared in an array](problems/leetcode/448) - Easy - Array
-- [455: Assign cookies](problems/leetcode/455) - Easy - Array
-- [485: Max consecutive ones](problems/leetcode/485) - Array
-- [487: Max consecutive ones II](problems/leetcode/487) - Medium - Array
-- [515: Find largest value in each tree row](problems/leetcode/515) - Medium - Tree
+- [448: Find all numbers disappeared in an array](problems/leetcode/448) 
+- [455: Assign cookies](problems/leetcode/455)
+- [485: Max consecutive ones](problems/leetcode/485)
+- [487: Max consecutive ones II](problems/leetcode/487)
+- [515: Find largest value in each tree row](problems/leetcode/515)
 - [532: Continuous subarray sum](problems/leetcode/532)
 - [587: Erect the fence](problems/leetcode/587)
 - [645: Set mismatch](problems/leetcode/645)
 - [766: Toeplitz matrix](problems/leetcode/766)
 - [779: K-th symbol in grammer](problems/leetcode/779)
-- [823: Binary trees with factors](problems/leetcode/823) - Medium - Trees - Dynamic programming
-- [872: Leaf-similar trees](problems/leetcode/872) - Easy - Trees
+- [823: Binary trees with factors](problems/leetcode/823)
+- [872: Leaf-similar trees](problems/leetcode/872)
 - [899: Orderly queue](problems/leetcode/899)
-- [901: Stock plan](problems/leetcode/901) - Monotonic stack
-- [905: Sort array by parity](problems/leetcode/905) - Easy - Array
-- [907: Sum of subarray minimums](problems/leetcode/907) - Monotonic stack
-- [931: Minimum falling path sum](problems/leetcode/931) - Medium - Matrix + Dynamic programming
-- [938: Range sum of BST](problems/leetcode/938) - Easy - Tree
-- [941: Valid mountain array](problems/leetcode/941) - Easy - Array
+- [901: Stock plan](problems/leetcode/901)
+- [905: Sort array by parity](problems/leetcode/905)
+- [907: Sum of subarray minimums](problems/leetcode/907)
+- [931: Minimum falling path sum](problems/leetcode/931)
+- [938: Range sum of BST](problems/leetcode/938)
+- [941: Valid mountain array](problems/leetcode/941)
 - [947 - Most stones removed with same row or column](problems/leetcode/947)
 - [976: Largest perimeter triangle](problems/leetcode/976)
 - [977: Squares of a sorted array](problems/leetcode/977)
 - [1137: N-th Tribonacci number](problems/leetcode/1137)
-- [1047: Remove all adjacent duplicates in a string](problems/leetcode/1047) - Stack
-- [1066: Campus bikes II](problems/leetcode/1066) - Matrix - Medium
-- [1089: Duplicate Zeros](problems/leetcode/1089) - Queue
-- [1198: Find smallest common element in all rows](problems/leetcode/1198) - Matrix
-- [1208: Unique number of occurrences](problems/leetcode/1208) - Set + Map
-- [1026: Maximum difference between node and ancestor](problems/leetcode/1026) - Medium - Tree
-- [1235: Maximum profit in job scheduling](problems/leetcode/1235) - Dynamic Programming + Binary Search
+- [1047: Remove all adjacent duplicates in a string](problems/leetcode/1047)
+- [1066: Campus bikes II](problems/leetcode/1066)
+- [1089: Duplicate Zeros](problems/leetcode/1089)
+- [1198: Find smallest common element in all rows](problems/leetcode/1198)
+- [1208: Unique number of occurrences](problems/leetcode/1208)
+- [1026: Maximum difference between node and ancestor](problems/leetcode/1026)
+- [1235: Maximum profit in job scheduling](problems/leetcode/1235)
 - [1239: Maximum length of a concatenated string with unique characters](problems/leetcode/1239)
 - [1323: Maximum 69 number](problems/leetcode/1323)
 - [1356: Sort integers by the number of bits with value 1](problems/leetcode/1356)
@@ -239,7 +239,7 @@
 - [2095: Delete the middle node of a linked list](problems/leetcode/2095)
 - [2125: Number of laser beams in a bank](problems/leetcode/2125)
 - [2131: Longest palindrome by concatenating two-letter words](problems/leetcode/2131)
-- [2225: Find players with zero or one losses](problems/leetcode/2225) - Map
-- [2385: Amount of time for binary tree to be infected](problems/leetcode/2385) - Medium - Tree
-- [2610: Convert an array into a 2d array with conditions](problems/leetcode/2610) - Medium - Array
+- [2225: Find players with zero or one losses](problems/leetcode/2225)
+- [2385: Amount of time for binary tree to be infected](problems/leetcode/2385)
+- [2610: Convert an array into a 2d array with conditions](problems/leetcode/2610)
 - [2870: Minimum number of operations to make array empty](problems/leetcode/2870)
