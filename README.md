@@ -231,6 +231,7 @@
 - [1323: Maximum 69 number](problems/leetcode/1323)
 - [1356: Sort integers by the number of bits with value 1](problems/leetcode/1356)
 - [1509: Minimum difference between largest and smallest value in three moves](problems/leetcode/1509)
+- [1530: NUmber of Good Leaf Nodes Pairs](problems/leetcode/1530)
 - [1544: Make the string great](problems/leetcode/1544)
 - [1704: Determine if string halves are alike](problems/leetcode/1704)
 - [1706: Where will the ball fall](problems/leetcode/1706)
