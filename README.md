@@ -165,6 +165,7 @@
 #### Lists
 
 - [Reverse a string](problems/others/lists/reverse-a-string)
+- [Squares of a sorted array](problems/others/lists/squares-of-a-sorted-array)
 - [Round-robin array of iterators](problems/others/round-robin-iterators/README.md)
 
 ## Coding platforms
