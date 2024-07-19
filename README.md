@@ -160,8 +160,11 @@
 - [Rod Cutting](problems/rod-cutting)
 - [Set-covering problem](problems/set-covering/README.md)
 
-### Others
+### By Data Structure
 
+#### Lists
+
+- [Reverse a string](problems/others/lists/reverse-a-string)
 - [Round-robin array of iterators](problems/others/round-robin-iterators/README.md)
 
 ## Coding platforms
