@@ -1,6 +1,5 @@
 # Kadane's algorithm
 
-[Joseph Born Kadane](https://en.wikipedia.org/wiki/Joseph_Born_Kadane) solves [the maximum subarray problem](../problems/maximum-subarray-problem/README.md).
 
 - [Kadane's algorithm](#kadanes-algorithm)
   - [Variants](#variants)
@@ -8,6 +7,10 @@
     - [No empty subarrays admitted](#no-empty-subarrays-admitted)
     - [Computing the best subarray's position](#computing-the-best-subarrays-position)
   - [Complexity](#complexity)
+
+## Overview
+
+[Joseph Born Kadane](https://en.wikipedia.org/wiki/Joseph_Born_Kadane) solves [the maximum subarray problem](../problems/maximum-subarray-problem/README.md).
 
 ## Variants
 
